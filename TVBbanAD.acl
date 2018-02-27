@@ -161,6 +161,7 @@
 #MytvSuper
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
+(^|\.)pagead2\.googlesyndication\.com$
 
 # Book-app 起点 掌阅 书旗 宜搜
 (^|\.)(adm|assets|tjlog)(\.ps|)\.easou\.com$
