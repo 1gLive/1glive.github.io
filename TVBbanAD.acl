@@ -229,6 +229,7 @@
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)pagead2\.googlesyndication\.com$
 (^|\.)securepubads\.g\.doubleclick\.net$
+(^|\.)www\.googletagmanager\.com$
 
 # Meizu flyme 魅族
 (^|\.)(aider-res|api-flow|api-game|api-push|cal|ebook|game-res|infocenter|openapi-news|reader|tongji-res1|tongji|uxip)\.meizu\.com$
