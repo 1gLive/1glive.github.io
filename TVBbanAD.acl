@@ -230,6 +230,7 @@
 (^|\.)pagead2\.googlesyndication\.com$
 (^|\.)securepubads\.g\.doubleclick\.net$
 (^|\.)www\.googletagmanager\.com$
+(^|\.)api\.news\.tvb\.com\/news\/version\?profile\=app\&mobile\=android
 
 # Meizu flyme 魅族
 (^|\.)(aider-res|api-flow|api-game|api-push|cal|ebook|game-res|infocenter|openapi-news|reader|tongji-res1|tongji|uxip)\.meizu\.com$
