@@ -158,11 +158,6 @@
 # Apple
 (^|\.)adserver\.unityads\.unity3d\.com$
 
-#MytvSuper
-(^|\.)api\.tvb\.com$
-(^|\.)img\.ads\.tvb\.com$
-(^|\.)pagead2\.googlesyndication\.com$
-
 # Book-app 起点 掌阅 书旗 宜搜
 (^|\.)(adm|assets|tjlog)(\.ps|)\.easou\.com$
 (^|\.)(ad|push|sys)\.zhangyue\.com$
@@ -228,6 +223,12 @@
 (^|\.)(deliver|g|log|kwmsg|mobilead|msclick2|msphoneclick|updatepage|wa|webstat)\.kuwo\.cn$
 (^|\.)apk\.shouji\.koowo\.com$
 (^|\.)g\.koowo\.com$
+
+#MytvSuper
+(^|\.)api\.tvb\.com$
+(^|\.)img\.ads\.tvb\.com$
+(^|\.)pagead2\.googlesyndication\.com$
+(^|\.)securepubads\.g\.doubleclick\.net$
 
 # Meizu flyme 魅族
 (^|\.)(aider-res|api-flow|api-game|api-push|cal|ebook|game-res|infocenter|openapi-news|reader|tongji-res1|tongji|uxip)\.meizu\.com$
