@@ -28,25 +28,6 @@
 (^|\.)doubleclick\.net$
 (^|\.)googletagmanager\.com$
 
-# Twitter
-(^|\.)(ads|syndication|syndication-o|analytics|scribe|p)\.twitter\.com$
-(^|\.)ads-twitter\.com$
-(^|\.)tellapart\.com$
-(^|\.)urls\.api\.twitter\.com$
-
-# Yahoo
-(^|\.)(ads|adserver|adss|analytics|beap-bc|comet|geo|gemini|p3p|ybp)\.yahoo\.com$
-(^|\.)(analytics|locdrop|onepush)\.query\.yahoo\.com$
-(^|\.)(ard|ane|yads)\.yahoo\.co\.jp$
-(^|\.)(js-apac-ss|partnerads)\.ysm\.yahoo\.com$
-(^|\.)ad\.wretch\.cc$
-(^|\.)clicks\.beap\.bc\.yahoo\.com$
-(^|\.)doubleplay-conf-yql\.media\.yahoo\.com$
-(^|\.)flurry\.com$
-(^|\.)m\.yap\.yahoo\.com$
-(^|\.)uservoice\.com$
-(^|\.)ws\.progrss\.yahoo\.com$
-
 # 广告关键词
 (^|\.)\w*admarvel\w*\.\w*$
 (^|\.)\w*admaster\w*\.\w*$
