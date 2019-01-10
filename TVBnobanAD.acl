@@ -26,6 +26,17 @@
 # 默认代理
 
 #**********************************************************************
+# [outbound_block_list]
+#禁止访问列表
+
+# MytvSUPER AD
+(^|\.)api\.tvb\.com$
+(^|\.)img\.ads\.tvb\.com$
+(^|\.)pagead2\.googlesyndication\.com$
+(^|\.)securepubads\.g\.doubleclick\.net$
+(^|\.)www\.googletagmanager\.com$
+
+#**********************************************************************
 [bypass_list]
 # 直连列表
 
@@ -48,16 +59,6 @@
 (^|\.)\w*moke\w*\.\w*$
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
-
-#MytvSuper & Netflix
-(^|\.)api\.tvb\.com$
-(^|\.)img\.ads\.tvb\.com$
-(^|\.)netflix\.com$
-(^|\.)netflix\.net$
-(^|\.)nflxext\.com$
-(^|\.)nflximg\.com$
-(^|\.)nflximg\.net$
-(^|\.)nflxvideo\.net$
 
 # Apple
 (^|\.)aaplimg\.com$
