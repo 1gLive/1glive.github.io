@@ -6793,28 +6793,6 @@
 [proxy_list]
 # 代理列表
 
-# MyList
-(^|\.)apkmirror\.com$
-(^|\.)bit\.no\.com$
-(^|\.)btlibrary\.me$
-(^|\.)cccat\.cc$
-(^|\.)cloudfront\.net$
-(^|\.)dmm\.co\.jp$
-(^|\.)gvt\w\.com$
-(^|\.)microsoft\.com$
-(^|\.)ping\.pe$
-(^|\.)s3\.amazonaws\.com$
-(^|\.)tumbex\.com$
-(^|\.)tvb\.com$
-(^|\.)twdvd\.com$
-(^|\.)xn--i2ru8q2qg\.com$
-(^|\.)ec2-54-210-142-85\.computer-1\.amazonaws\.com$
-(^|\.)ec2-54-174-24-124\.computer-1\.amazonaws\.com$
-(^|\.)ec2-54-174-178-70\.computer-1\.amazonaws\.com$
-(^|\.)ec2-54-175-2-194\.computer-1\.amazonaws\.com$
-(^|\.)ec2-54-210-54-246\.computer-1\.amazonaws\.com$
-(^|\.)raw\.githubusercontent\.com$
-
 #GFWList IP start
 85.17.73.31
 174.142.105.153
@@ -6861,20 +6839,6 @@
 36.234.188.130
 114.199.145.219
 220.132.16.173
-
-# 国外域名关键字
-(^|\.)\w*1e100\w*\.\w*$
-(^|\.)\w*appledaily\w*\.\w*$
-(^|\.)\w*blogspot\w*\.\w*$
-(^|\.)\w*dropbox\w*\.\w*$
-(^|\.)\w*facebook\w*\.\w*$
-(^|\.)\w*fbcdn\w*\.\w*$
-(^|\.)\w*gmail\w*\.\w*$
-(^|\.)\w*google\w*\.\w*$
-(^|\.)\w*spotify\w*\.\w*$
-(^|\.)\w*telegram\w*\.\w*$
-(^|\.)\w*twitter\w*\.\w*$
-(^|\.)\w*whatsapp\w*\.\w*$
 
 #GFWList
 (^|\.)(.*)\.2\.bahamut\.com\.tw$
