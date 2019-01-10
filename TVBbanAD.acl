@@ -21,29 +21,6 @@
 [outbound_block_list]
 # 禁止访问列表
 
-# Adobe
-(^|\.)3dns-2\.adobe\.com$
-(^|\.)3dns-3\.adobe\.com$
-(^|\.)activate\.adobe\.com$
-(^|\.)activate\.wip3\.adobe\.com$
-(^|\.)activate-sea\.adobe\.com$
-(^|\.)activate-sjc0\.adobe\.com$
-(^|\.)adobe-dns\.adobe\.com$
-(^|\.)adobe-dns-2\.adobe\.com$
-(^|\.)adobe-dns-3\.adobe\.com$
-(^|\.)ereg\.adobe\.com$
-(^|\.)ereg\.wip3\.adobe\.com$
-(^|\.)geo2\.adobe\.com$
-(^|\.)hl2rcv\.adobe\.com$
-(^|\.)hlrcv\.stage\.adobe\.com$
-(^|\.)lm\.licenses\.adobe\.com$
-(^|\.)lmlicenses\.wip4\.adobe\.com$
-(^|\.)na1r\.services\.adobe\.com$
-(^|\.)na2m-pr\.licenses\.adobe\.com$
-(^|\.)practivate\.adobe\.com$
-(^|\.)wip3\.adobe\.com$
-(^|\.)wwis-dubc1-vip60\.adobe\.com$
-
 # Baidu
 (^|\.)(a|adm|adscdn|afd|als|anquan|appc|as|c|cb|cbjs|cbjslog|cjhq|cpro|cpro2|cpu|cpu-admin|crs|drmcmm|e|eclick|eiv|entry)\.baidu\.(com|cn)$
 (^|\.)(hc|hm|hmma|hpd|imageplus|ma|mobads-logs|mobads|mtj|nsclick)\.baidu\.(com|cn)$
