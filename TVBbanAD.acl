@@ -801,6 +801,10 @@
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
 
+# TVB
+(^|\.)mytvsuper\.com$
+(^|\.)tvb\.com$
+
 # Apple
 (^|\.)aaplimg\.com$
 (^|\.)akadns\.net$
@@ -6759,3 +6763,13 @@
 
 [proxy_all]
 # 默认代理
+
+# MytvSuper
+(^|\.)uapi\.mytvsuper\.com$
+
+#**********************************************************************
+[remote_dns]
+# 远程DNS
+
+1.1.1.1:53
+8.8.8.8:53
