@@ -1216,10 +1216,6 @@
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
 
-# TVB
-(^|\.)mytvsuper\w*\.\w*$
-(^|\.)tvb\w*\.\w*$
-
 # Apple
 (^|\.)aaplimg\.com$
 (^|\.)akadns\.net$
