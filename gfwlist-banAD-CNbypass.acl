@@ -24,6 +24,9 @@
 [outbound_block_list]
 # 禁止访问列表
 
+#车来了
+(^|\.)ad\.chelaile\.net\.cn$
+
 #MytvSuper
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
