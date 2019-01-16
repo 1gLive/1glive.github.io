@@ -1,13 +1,4 @@
 #**********************************************************************
-# 12.23
-# 2018年12月23日22:35:08
-# 转载需要注明版权和来源
-#
-# 屏蔽常用网站、视频、手机rom广告&运营商劫持广告&数据跟踪&开屏广告
-#
-# 参照lhie1的surge规则改编，致谢!! https://github.com/lhie1/Surge
-# 参照scomper的surge规则改编，致谢!! https://gist.github.com/scomper/915b04a974f9e11952babfd0bbb241a8/revisions
-#
 # 参数解释：
 # [proxy_all] 默认代理-本规则使用
 # [bypass_all] 默认直连
@@ -15,7 +6,6 @@
 # [bypass_list] 直连列表 在1496多行
 # [proxy_list] 代理列表 在7474多行
 # [remote_dns] 远程 DNS 解析 -不加使用本地 DNS
-#
 #**********************************************************************
 [proxy_all]
 # 默认代理
@@ -13141,164 +13131,6 @@
 (^|\.)zyzc9\.com$
 (^|\.)zzcartoon\.com$
 (^|\.)zzux\.com$
-
-# Other
-(^|\.)doub\.io$
-(^|\.)gameloft\.com$
-(^|\.)quora\.com$
-(^|\.)reddit\.com$
-(^|\.)teddysun\.com$
-(^|\.)unsplash\.com$
-
-# APKPURE
-(^|\.)apkpure\.com$
-
-# BBC
-(^|\.)\w*uk-live\w*\.\w*$
-(^|\.)bbc\.co$
-(^|\.)bbc\.com$
-
-# Discord
-(^|\.)discordapp\.com$
-(^|\.)discordapp\.net$
-
-# Epicgames
-(^|\.)\w*epicgames\w*\.\w*$
-(^|\.)helpshift\.com$
-
-# Hulu
-(^|\.)hulu\.com$
-
-# Instagram
-(^|\.)\w*instagram\w*\.\w*$
-(^|\.)cdninstagram\.com$
-(^|\.)instagram\.com$
-(^|\.)instagr\.am$
-(^|\.)akamaihd\.net$
-(^|\.)d36xtkk24g8jdx\.cloudfront\.net$
-
-# Kakao Talk
-(^|\.)kakao\.com$
-(^|\.)kakao\.co\.kr$
-(^|\.)kakaocdn\.net$
-1.201.0.0/24
-27.0.236.0/22
-103.246.56.0/22
-103.27.148.0/22
-110.76.140.0/22
-113.61.104.0/22
-
-# Line
-(^|\.)lin\.ee$
-(^|\.)line-apps\.com$
-(^|\.)line-cdn\.net$
-(^|\.)line-scdn\.net$
-(^|\.)line\.me$
-(^|\.)line\.naver\.jp$
-(^|\.)nhncorp\.jp$
-103.2.28.0/22
-119.235.224.0/21
-119.235.232.0/23
-119.235.235.0/24
-119.235.236.0/23
-125.6.146.0/24
-125.6.149.0/24
-125.6.190.0/24
-125.209.208.0/20
-203.104.103.0/24
-203.104.128.0/20
-203.174.66.64/26
-203.174.77.0/24
-
-# MytvSUPER & Netflix
-(^|\.)\w*nowtv100\w*\.\w*$
-(^|\.)\w*rthklive\w*\.\w*$
-(^|\.)mytvsuper\.com$
-(^|\.)netflix\.com$
-(^|\.)netflix\.net$
-(^|\.)nflxext\.com$
-(^|\.)nflximg\.com$
-(^|\.)nflximg\.net$
-(^|\.)nflxvideo\.net$
-(^|\.)tvb\.com$
-8.41.4.0/24
-23.246.0.0/18
-37.77.184.0/21
-45.57.0.0/17
-64.120.128.0/17
-66.197.128.0/17
-69.53.224.0/19
-108.175.32.0/20
-185.2.220.0/22
-185.9.188.0/22
-192.173.64.0/18
-198.38.96.0/19
-198.45.48.0/20
-207.45.72.0/22
-208.75.76.0/24
-
-# Onenote
-(^|\.)live\.net$
-(^|\.)live\.com$
-(^|\.)onenote\.com$
-
-# Potato Chat
-(^|\.)potato\.im$
-13.251.24.157/24
-13.251.41.203/24
-17.252.156.147/24
-17.252.157.26/24
-
-#ResiloSync
-(^|\.)config\.getsync\.com$
-(^|\.)config\.resilio\.com$
-54.235.182.157/32
-107.182.230.198/32
-173.244.209.150/32
-173.244.217.42/32
-209.95.56.60/32
-
-# Steam
-(^|\.)fanatical\.com$
-(^|\.)humblebundle\.com$
-(^|\.)steamcommunity\.com$
-(^|\.)steampowered\.com$
-(^|\.)steamstatic\.com$
-
-# Telegram
-91.108.0.0/16
-109.239.140.0/24
-149.154.160.0/20
-
-# Twitch
-(^|\.)twitch\.tv$
-(^|\.)ttvnw\.net$
-(^|\.)jtvnw\.net$
-(^|\.)akamaized\.net$
-
-# Whatsapp
-(^|\.)whatsapp\.com$
-(^|\.)whatsapp\.net$
-18.194.0.0/15
-34.224.0.0/12
-54.242.0.0/15
-50.22.198.204/30
-208.43.122.128/27
-108.168.174.0/16
-173.192.231.32/27
-158.85.5.192/27
-174.37.243.0/16
-158.85.46.128/27
-173.192.222.160/27
-184.173.128.0/17
-158.85.224.160/27
-75.126.150.0/16
-69.171.235.0/16
-
-#飞流直播
-(^|\.)neulion\.com$
-(^|\.)icntv\.xyz$
-(^|\.)flzbcdn\.xyz$
 
 #**********************************************************************
 [remote_dns]
