@@ -15,6 +15,7 @@
 # 禁止访问列表
 
 #车来了
+^.*voiceads*.*
 (^|\.)(ad|atrace)\.chelaile\.net\.cn*
 (^|\.)pgdt\.ugdtimg\.com*
 (^|\.)Fengine\.tuifish\.com*
