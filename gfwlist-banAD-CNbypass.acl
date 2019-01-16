@@ -25,7 +25,7 @@
 # 禁止访问列表
 
 #车来了
-(^|\.)ad\.chelaile\.net\.cn$
+(^|\.)(ad|atrace)\.chelaile\.net\.cn$
 (^|\.)pgdt\.ugdtimg\.com$
 (^|\.)Fengine\.tuifish\.com$
 
