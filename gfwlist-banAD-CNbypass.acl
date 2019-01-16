@@ -31,7 +31,8 @@
 (^|\.)v\.gdt\.qq\.com$
 
 #MytvSuper
-(^|\.)api\.tvb\.com$
+#(^|\.)api\.tvb\.com$
+(^|\.)\w*version\w*\.\w*$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
