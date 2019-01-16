@@ -31,12 +31,8 @@
 (^|\.)v\.gdt\.qq\.com$
 
 #MytvSuper
-#(^|\.)api\.tvb\.com$
-(^|\.)api\.tvb\.com\/platform\w*\.\w*$
+(^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
-(^|\.)googlesyndication\.com$
-(^|\.)doubleclick\.net$
-(^|\.)googletagmanager\.com$
 
 # 广告关键词
 (^|\.)\w*admarvel\w*\.\w*$
