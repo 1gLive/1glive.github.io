@@ -25,7 +25,7 @@
 # 禁止访问列表
 
 #车来了
-(^|\.)ad\.chelaile\.net\.cn$
+(^|\.)\w*chelaile\w*\.\w*$
 
 #MytvSuper
 (^|\.)api\.tvb\.com$
