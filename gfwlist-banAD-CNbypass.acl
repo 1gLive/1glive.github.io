@@ -32,7 +32,7 @@
 
 #MytvSuper
 #(^|\.)api\.tvb\.com$
-(^|\.)\w*version\w*\.\w*$
+(^|\.)\w*version.php\w*\.\w*$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
