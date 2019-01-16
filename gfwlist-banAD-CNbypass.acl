@@ -32,7 +32,7 @@
 
 #MytvSuper
 #(^|\.)api\.tvb\.com$
-(^|\.)api\.tvb\.com\/platform$
+(^|\.)api\.tvb\.com\/platform\w*\.\w*$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
