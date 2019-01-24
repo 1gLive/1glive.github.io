@@ -7475,6 +7475,7 @@
 (^|\.)\w*1e100\w*\.\w*$
 (^|\.)\w*abema\w*\.\w*$
 (^|\.)\w*appledaily\w*\.\w*$
+(^|\.)\w*apkpure\w*\.\w*$
 (^|\.)\w*avtb\w*\.\w*$
 (^|\.)\w*beetalk\w*\.\w*$
 (^|\.)\w*blogspot\w*\.\w*$
