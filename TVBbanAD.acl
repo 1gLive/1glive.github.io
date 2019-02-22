@@ -23,6 +23,13 @@
 (^|\.)v\.gdt\.qq\.com$
 
 #MytvSuper
+(^|\.)api\.viu\.tv$
+(^|\.)img\.ads\.viu\.tv$
+(^|\.)googlesyndication\.com$
+(^|\.)doubleclick\.net$
+(^|\.)googletagmanager\.com$
+
+#ViuTV
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)googlesyndication\.com$
