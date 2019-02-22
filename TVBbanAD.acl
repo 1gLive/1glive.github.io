@@ -22,16 +22,10 @@
 (^|\.)Fengine\.tuifish\.com$
 (^|\.)v\.gdt\.qq\.com$
 
-#MytvSuper
-(^|\.)api\.viu\.tv$
-(^|\.)img\.ads\.viu\.tv$
-(^|\.)googlesyndication\.com$
-(^|\.)doubleclick\.net$
-(^|\.)googletagmanager\.com$
-
-#ViuTV
+#MytvSuper & ViuTV
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
+(^|\.)img\.ads\.viu\.tv$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
 (^|\.)googletagmanager\.com$
