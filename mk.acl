@@ -26,8 +26,7 @@
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)img\.tvb\.com$
-(^|\.)img\.ads\.viu\.tv$
-(^|\.)img\.viu\.tv$
+(^|\.)static\.viu\.tv$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
 (^|\.)googletagmanager\.com$
