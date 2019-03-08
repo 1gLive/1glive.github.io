@@ -16,9 +16,8 @@
 # 禁止访问列表
 
 #多开分身
-(^|\.)app\.feilongwl\.cn$
-(^|\.)\w*update\w*\.\w*$
-(^|\.)wq\.91ishare\.cn$
+(^|\.)feilongwl\.cn$
+(^|\.)91ishare\.cn$
 
 #车来了
 (^|\.)ads\.voiceads\.cn$
