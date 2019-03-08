@@ -15,6 +15,10 @@
 [outbound_block_list]
 # 禁止访问列表
 
+#多开分身
+(^|\.)app\.feilongwl\.cn$
+(^|\.)chaos\91ishare\.cn$
+
 #车来了
 (^|\.)ads\.voiceads\.cn$
 (^|\.)(ad|atrace)\.chelaile\.net\.cn$
