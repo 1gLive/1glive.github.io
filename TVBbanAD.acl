@@ -19,6 +19,7 @@
 (^|\.)app\.feilongwl\.cn$
 (^|\.)chaos\.91ishare\.cn$
 (^|\.)wq\.91ishare\.cn$
+(^|\.)\w*91ishare\w*\.\w*$
 
 #车来了
 (^|\.)ads\.voiceads\.cn$
