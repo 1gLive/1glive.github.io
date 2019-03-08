@@ -17,7 +17,8 @@
 
 #多开分身
 (^|\.)app\.feilongwl\.cn$
-(^|\.)chaos\91ishare\.cn$
+(^|\.)chaos\.91ishare\.cn$
+(^|\.)wq\.91ishare\.cn$
 
 #车来了
 (^|\.)ads\.voiceads\.cn$
