@@ -629,7 +629,8 @@
 # Sohu 搜狐
 (^|\.)(888|lm|push)\.tv\.sohu\.com$
 (^|\.)(aty|bd|click|click2|ctr|pv|pb|wl|um)\.hd\.sohu\.com$
-(^|\.)(ads|adnet|aty|epro|golden1|hui|inte|uranus|wan|yule|pv)\.sohu\.com$
+(^|\.)(ads|adnet|aty|epro|go|golden1|hui|inte|uranus|wan|yule|pv)\.sohu\.com$
+(^|\.)(epro|golden1|inte|uranus|pv)\.sogou\.com$
 (^|\.)(inte|lu|theta)\.sogoucdn\.com$
 (^|\.)api\.k\.sohu\.com$
 (^|\.)count\.vrs\.sohu\.com$
@@ -1519,33 +1520,11 @@
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
 
-# Apple
-(^|\.)aaplimg\.com$
-(^|\.)akadns\.net$
-(^|\.)apple\.com$
-(^|\.)cdn-apple\.com$
-(^|\.)icloud-content\.com$
-(^|\.)icloud\.com$
-(^|\.)mzstatic\.com$
+# 360
+(^|\.)360\.cn$
+(^|\.)qhimg\.com$
 
-# Blizzard
-(^|\.)battle\.net$
-(^|\.)battlenet\.com$
-(^|\.)blizzard\.com$
-
-# Prior
-(^|\.)client\.amplifi\.com$
-(^|\.)ip\.bjango\.com$
-(^|\.)alphassl\.com$
-(^|\.)edu\.cn$
-
-# Spark
-(^|\.)amplitude\.com$
-(^|\.)firebaseio\.com$
-(^|\.)hockeyapp\.net$
-(^|\.)smartmailcloud\.com$
-
-# TaoBao
+# Alibaba
 (^|\.)alibaba\.com$
 (^|\.)alicdn\.com$
 (^|\.)aliexpress\.com$
@@ -1562,6 +1541,68 @@
 (^|\.)tbcache\.com$
 (^|\.)tbcdn\.com$
 (^|\.)tmall\.com$
+
+# Apple
+(^|\.)aaplimg\.com$
+(^|\.)akadns\.net$
+(^|\.)apple\.com$
+(^|\.)cdn-apple\.com$
+(^|\.)icloud-content\.com$
+(^|\.)icloud\.com$
+(^|\.)mzstatic\.com$
+
+# Blizzard
+(^|\.)battle\.net$
+(^|\.)battlenet\.com$
+(^|\.)blizzard\.com$
+
+# baidu
+(^|\.)baidu\.com$
+(^|\.)hao123\.com$
+
+# Prior
+(^|\.)client\.amplifi\.com$
+(^|\.)ip\.bjango\.com$
+(^|\.)alphassl\.com$
+(^|\.)edu\.cn$
+
+# Spark
+(^|\.)amplitude\.com$
+(^|\.)firebaseio\.com$
+(^|\.)hockeyapp\.net$
+(^|\.)smartmailcloud\.com$
+ 
+# Sina
+(^|\.)sina\.cn$
+(^|\.)sina\.com$
+(^|\.)sina\.com\.cn$
+(^|\.)sinaapp\.com$
+(^|\.)sinaimg\.cn$
+(^|\.)sinaimg\.com$
+(^|\.)weibo\.com$
+
+# Sohu
+(^|\.)itc\.cn$
+(^|\.)sogou\.com$
+(^|\.)sogoucdn\.com$
+(^|\.)sohu\.com$
+(^|\.)sohucs\.com$
+
+# Tencent
+(^|\.)qq\.com$
+(^|\.)qqmail\.com$
+(^|\.)soso\.com$
+(^|\.)gtimg\.com$
+(^|\.)gtimg\.cn$
+(^|\.)qpic\.cn$
+(^|\.)smtcdns\.com$
+ 
+# Toutiao Bytedance
+(^|\.)bytecdn\.cn$
+(^|\.)bytedance\.com$
+(^|\.)pstatp\.com$
+(^|\.)snssdk\.com$
+(^|\.)toutiao\.com$
 
 # TeamViewer
 109.239.140.0/24
@@ -1671,6 +1712,7 @@
 (^|\.)godic\.net$
 (^|\.)gravatar\.com$
 (^|\.)guazi\.com$
+(^|\.)gzlzfm\.com$
 (^|\.)haibian\.com$
 (^|\.)hao123\.com$
 (^|\.)haosou\.com$
@@ -1678,6 +1720,7 @@
 (^|\.)hongxiu\.com$
 (^|\.)huajiao\.com$
 (^|\.)hupu\.com$
+(^|\.)huya\.com$
 (^|\.)iciba\.com$
 (^|\.)ifeng\.com$
 (^|\.)ifengimg\.com$
@@ -1705,6 +1748,7 @@
 (^|\.)letv\.com$
 (^|\.)letvcloud\.com$
 (^|\.)lizhi\.fm$
+(^|\.)lizhifm\.com$
 (^|\.)lofter\.com$
 (^|\.)luoo\.net$
 (^|\.)lvmama\.com$
@@ -1752,6 +1796,7 @@
 (^|\.)shumilou\.net$
 (^|\.)sinaapp\.com$
 (^|\.)sinaimg\.com$
+(^|\.)smtcdns\.net$
 (^|\.)smzdm\.com$
 (^|\.)snwx\.com$
 (^|\.)so\.com$
@@ -2198,6 +2243,8 @@
 43.228.152.0/22
 43.228.188.0/22
 43.229.40.0/22
+43.229.49.0/24
+43.229.50.0/23
 43.229.56.0/22
 43.229.96.0/22
 43.229.136.0/21
@@ -2990,6 +3037,7 @@
 103.19.72.0/22
 103.19.232.0/22
 103.20.12.0/22
+103.20.32.0/24
 103.20.68.0/22
 103.20.112.0/22
 103.20.128.0/22
@@ -3058,6 +3106,8 @@
 103.30.228.0/22
 103.30.236.0/22
 103.31.0.0/22
+103.31.1.0/24
+103.31.2.0/23
 103.31.48.0/21
 103.31.60.0/22
 103.31.64.0/21
@@ -3875,6 +3925,16 @@
 103.132.104.0/21
 103.132.112.0/21
 103.132.120.0/22
+103.132.164.0/22
+103.132.188.0/22
+103.132.208.0/21
+103.132.234.0/23
+103.133.12.0/22
+103.133.40.0/22
+103.133.128.0/22
+103.133.136.0/22
+103.133.176.0/22
+103.133.232.0/22
 103.192.0.0/19
 103.192.48.0/21
 103.192.56.0/22
@@ -4741,6 +4801,8 @@
 116.199.128.0/19
 116.204.0.0/17
 116.204.168.0/22
+116.204.232.0/21
+116.204.244.0/22
 116.205.0.0/16
 116.207.0.0/16
 116.208.0.0/14
@@ -5809,6 +5871,7 @@
 202.1.105.0/24
 202.1.106.0/24
 202.3.128.0/23
+202.3.134.0/24
 202.4.128.0/19
 202.4.252.0/22
 202.5.208.0/21
@@ -5998,6 +6061,7 @@
 202.57.216.0/22
 202.57.240.0/20
 202.58.0.0/24
+202.58.101.0/24
 202.58.112.0/22
 202.59.0.0/23
 202.59.212.0/22
@@ -6088,6 +6152,7 @@
 202.93.0.0/22
 202.93.252.0/22
 202.94.0.0/19
+202.94.68.0/24
 202.94.74.0/24
 202.94.81.0/24
 202.94.92.0/22
@@ -7404,9 +7469,12 @@
 220.242.56.0/22
 220.242.60.0/23
 220.242.62.0/24
-220.242.64.0/18
-220.242.147.0/24
-220.242.158.0/24
+220.242.64.0/19
+220.242.96.0/20
+220.242.112.0/21
+220.242.120.0/22
+220.242.124.0/23
+220.242.126.0/24
 220.242.161.0/24
 220.242.162.0/23
 220.242.163.0/24
