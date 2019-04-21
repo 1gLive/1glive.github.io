@@ -29,6 +29,7 @@
 #MytvSuper & ViuTV
 (^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
+(^|\.)api\.ads\.tvb\.com$
 (^|\.)img\.ads\.viu\.tv$
 (^|\.)googlesyndication\.com$
 (^|\.)doubleclick\.net$
