@@ -630,8 +630,7 @@
 # Sohu 搜狐
 (^|\.)(888|lm|push)\.tv\.sohu\.com$
 (^|\.)(aty|bd|click|click2|ctr|pv|pb|wl|um)\.hd\.sohu\.com$
-(^|\.)(ads|adnet|aty|epro|go|golden1|hui|inte|uranus|wan|yule|pv)\.sohu\.com$
-(^|\.)(epro|golden1|inte|uranus|pv)\.sogou\.com$
+(^|\.)(ads|adnet|aty|epro|golden1|hui|inte|uranus|wan|yule|pv)\.sohu\.com$
 (^|\.)(inte|lu|theta)\.sogoucdn\.com$
 (^|\.)api\.k\.sohu\.com$
 (^|\.)count\.vrs\.sohu\.com$
@@ -1521,11 +1520,35 @@
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
 
-# 360
-(^|\.)360\.cn$
-(^|\.)qhimg\.com$
+# Apple
+(^|\.)aaplimg\.com$
+(^|\.)akadns\.net$
+(^|\.)apple\.com$
+(^|\.)cdn-apple\.com$
+(^|\.)icloud-content\.com$
+(^|\.)icloud\.com$
+(^|\.)mzstatic\.com$
 
-# Alibaba
+
+# Blizzard
+(^|\.)battle\.net$
+(^|\.)battlenet\.com$
+(^|\.)blizzard\.com$
+
+# Prior
+(^|\.)client\.amplifi\.com$
+(^|\.)ip\.bjango\.com$
+(^|\.)alphassl\.com$
+(^|\.)edu\.cn$
+
+# Spark
+(^|\.)amplitude\.com$
+(^|\.)firebaseio\.com$
+(^|\.)hockeyapp\.net$
+(^|\.)smartmailcloud\.com$
+
+
+# TaoBao
 (^|\.)alibaba\.com$
 (^|\.)alicdn\.com$
 (^|\.)aliexpress\.com$
@@ -1543,15 +1566,6 @@
 (^|\.)tbcdn\.com$
 (^|\.)tmall\.com$
 
-# Apple
-(^|\.)aaplimg\.com$
-(^|\.)akadns\.net$
-(^|\.)apple\.com$
-(^|\.)cdn-apple\.com$
-(^|\.)icloud-content\.com$
-(^|\.)icloud\.com$
-(^|\.)mzstatic\.com$
-
 # Blizzard
 (^|\.)battle\.net$
 (^|\.)battlenet\.com$
@@ -1566,12 +1580,6 @@
 (^|\.)ip\.bjango\.com$
 (^|\.)alphassl\.com$
 (^|\.)edu\.cn$
-
-# Spark
-(^|\.)amplitude\.com$
-(^|\.)firebaseio\.com$
-(^|\.)hockeyapp\.net$
-(^|\.)smartmailcloud\.com$
  
 # Sina
 (^|\.)sina\.cn$
@@ -7476,6 +7484,7 @@
 220.242.120.0/22
 220.242.124.0/23
 220.242.126.0/24
+220.242.147.0/24
 220.242.161.0/24
 220.242.162.0/23
 220.242.163.0/24
