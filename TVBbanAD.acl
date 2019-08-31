@@ -26,12 +26,6 @@
 (^|\.)Fengine\.tuifish\.com$
 (^|\.)v\.gdt\.qq\.com$
 
-#MytvSuper & ViuTV
-(^|\.)api\.tvb\.com$
-(^|\.)img\.ads\.tvb\.com$
-(^|\.)api\.ads\.tvb\.com$
-(^|\.)img\.ads\.viu\.tv$
-
 # 163
 (^|\.)(adgeo|bobo|fa|g|g1|gb|nex)(\.corp|)\.163\.com$
 (^|\.)(analytics|img1|img2|mimg|push)\.126\.net$
