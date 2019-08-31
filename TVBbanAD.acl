@@ -50,6 +50,7 @@
 (^|\.)tracking\..*$
 
 #MytvSuper & ViuTV
+(^|\.)api\.tvb\.com$
 (^|\.)img\.ads\.tvb\.com$
 (^|\.)img\.ads\.viu\.tv$
 
