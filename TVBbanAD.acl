@@ -26,6 +26,45 @@
 (^|\.)Fengine\.tuifish\.com$
 (^|\.)v\.gdt\.qq\.com$
 
+#MytvSuper & ViuTV
+(^|\.)img\.ads\.tvb\.com$
+(^|\.)api\.ads\.tvb\.com$
+(^|\.)img\.ads\.viu\.tv$
+
+# 广告关键词
+(^|\.)\w*admarvel\w*\.\w*$
+(^|\.)\w*admaster\w*\.\w*$
+(^|\.)\w*adsage\w*\.\w*$
+(^|\.)\w*adsensor\w*\.\w*$
+(^|\.)\w*adservice\w*\.\w*$
+(^|\.)\w*adsh\w*\.\w*$
+(^|\.)\w*adsmogo\w*\.\w*$
+(^|\.)\w*adsrvmedia\w*\.\w*$
+(^|\.)\w*adsserving\w*\.\w*$
+(^|\.)\w*adwords\w*\.\w*$
+(^|\.)\w*analysis\w*\.\w*$
+(^|\.)\w*analytics\w*\.\w*$
+(^|\.)\w*applovin\w*\.\w*$
+(^|\.)\w*duomeng\w*\.\w*$
+(^|\.)\w*dwtrack\w*\.\w*$
+(^|\.)\w*guanggao\w*\.\w*$
+(^|\.)\w*lianmeng\w*\.\w*$
+(^|\.)\w*monitor\w*\.\w*$
+(^|\.)\w*openx\w*\.\w*$
+(^|\.)\w*partnerad\w*\.\w*$
+(^|\.)\w*socdm\w*\.\w*$
+(^|\.)\w*supersonicads\w*\.\w*$
+(^|\.)\w*tracking\w*\.\w*$
+(^|\.)\w*traffic\w*\.\w*$
+(^|\.)\w*uedas\w*\.\w*$
+(^|\.)\w*umeng\w*\.\w*$
+(^|\.)\w*usage\w*\.\w*$
+(^|\.)\w*wlmonitor\w*\.\w*$
+(^|\.)\w*zjtoolbar\w*\.\w*$
+(^|\.)ad\d{0,3}\..*$
+(^|\.)ads\d{0,3}\..*$
+(^|\.)tracking\..*$
+
 # 163
 (^|\.)(adgeo|bobo|fa|g|g1|gb|nex)(\.corp|)\.163\.com$
 (^|\.)(analytics|img1|img2|mimg|push)\.126\.net$
@@ -294,6 +333,226 @@
 (^|\.)xtzxmy\.com$
 (^|\.)xyrkl\.com$
 (^|\.)zhuanfakong\.com$
+
+# Dangdang
+(^|\.)(a|click|schprompt|t)\.dangdang\.com$
+
+# Douyin
+(^|\.)log\.snssdk\.com$
+(^|\.)ic\.snssdk\.com$
+
+# Duomi
+(^|\.)ad\.duomi\.com$
+(^|\.)boxshows\.com$
+
+# Facebook
+(^|\.)staticxx\.facebook\.com$
+
+# Fang
+(^|\.)click1n\.soufun\.com$
+(^|\.)clickm\.fang\.com$
+(^|\.)clickn\.fang\.com$
+(^|\.)countpvn\.light\.fang\.com$
+(^|\.)countubn\.light\.soufun\.com$
+(^|\.)mshow\.fang\.com$
+(^|\.)tongji\.home\.soufun\.com$
+
+# Google
+(^|\.)admob\.com$
+(^|\.)ads\.gmodules\.com$
+(^|\.)ads\.google\.com$
+(^|\.)adservice\.google\.com$
+(^|\.)afd\.l\.google\.com$
+(^|\.)badad\.googleplex\.com$
+(^|\.)csi\.gstatic\.com$
+(^|\.)doubleclick(\.com|\.net)$
+(^|\.)google-analytics\.com$
+(^|\.)googleadservices\.com$
+(^|\.)googleadsserving\.cn$
+(^|\.)googlecommerce\.com$
+(^|\.)googlesyndication\.com$
+(^|\.)mobileads\.google\.com$
+(^|\.)pagead-tpc\.l\.google\.com$
+(^|\.)pagead\.google\.com$
+(^|\.)pagead\.l\.google\.com$
+(^|\.)service\.urchin\.com$
+
+# JD
+(^|\.)(c-nfa|img-x|jrclick|jzt|policy)\.jd\.com$
+(^|\.)ads\.union\.jd\.com$
+(^|\.)cps\.360buy\.com$
+(^|\.)stat\.m\.jd\.com$
+
+# Kugou
+(^|\.)(bssdl|bssdlbig|d|downmobile|fanxing|gad|game|gamebox|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
+(^|\.)(msg|push|update)\.mobile\.kugou\.com$
+(^|\.)ads\.service\.kugou\.com$
+(^|\.)gcapi\.sy\.kugou\.com$
+(^|\.)kuaikaiapp\.com$
+(^|\.)log\.stat\.kugou\.com$
+(^|\.)log\.web\.kugou\.com$
+
+# Kuwo
+(^|\.)(deliver|g|log|kwmsg|mobilead|msclick2|msphoneclick|updatepage|wa|webstat)\.kuwo\.cn$
+(^|\.)apk\.shouji\.koowo\.com$
+(^|\.)g\.koowo\.com$
+
+# Meizu flyme 魅族
+(^|\.)(aider-res|api-flow|api-game|api-push|cal|ebook|game-res|infocenter|openapi-news|reader|tongji-res1|tongji|uxip)\.meizu\.com$
+(^|\.)(bro|t-e|t-flow)\.flyme\.cn$
+(^|\.)(ebook|game|push|reader|upush)\.res\.meizu\.com$
+(^|\.)aries\.mzres\.com$
+(^|\.)umid\.orion\.meizu\.com$
+
+# Meitu
+(^|\.)(corp|gg|message|tuiguang)\.meitu\.com$
+(^|\.)(dc|mdc|rabbit)\.meitustat\.com$
+(^|\.)a\.koudai\.com$
+(^|\.)adui\.tg\.meitu\.com$
+(^|\.)meitubeauty\.meitudata\.com$
+(^|\.)rabbit\.tg\.meitu\.com$
+(^|\.)xiuxiu\.android\.dl\.meitu\.com$
+(^|\.)xiuxiu\.mobile\.meitudata\.com$
+
+# Miui 小米
+(^|\.)(ad|ad1|shenghuo|xmpush)\.xiaomi\.com$
+(^|\.)(a|wtradv)\.market\.xiaomi\.com$
+(^|\.)(bss|de|dvb|jellyfish|stat)\.pandora\.xiaomi\.com$
+(^|\.)(d|migc|migcreport|mis)\.g\.mi\.com$
+(^|\.)(notice|ppurifier)\.game\.xiaomi\.com$
+(^|\.)(r|security)\.browser\.miui\.com$
+(^|\.)adv\.sec\.miui\.com$
+(^|\.)tracking\.miui\.com$
+(^|\.)union\.mi\.com$
+
+# Moji
+(^|\.)ad\.api\.moji\.com$
+(^|\.)app\.moji001\.com$
+(^|\.)cdn\.moji\.com$
+(^|\.)cdn\.moji002\.com$
+(^|\.)cdn2\.moji002\.com$
+(^|\.)fds\.api\.moji\.com$
+(^|\.)log\.moji\.com$
+(^|\.)stat\.moji\.com$
+(^|\.)ugc\.moji001\.com$
+
+# Qingting\.fm
+(^|\.)(ad|admgr|logger)\.qingting\.fm$
+(^|\.)dload\.qd\.qingting\.fm$
+(^|\.)s\.qd\.qingting\.fm$
+(^|\.)s\.qd\.qingtingfm\.com$
+
+# QQ
+(^|\.)\w*omgmta\w*\.\w*$
+(^|\.)(act|adsfile|bugly|buluo|gdt|monitor|pingma|pingtcss|report|tajs|tcss|uu)\.qq\.com$
+(^|\.)ad\.qun\.qq\.com$
+
+# RenRen
+(^|\.)jebe\.renren\.com$
+(^|\.)ebp\.renren\.com$
+(^|\.)jebe\.xnimg\.cn$
+
+# Sina
+(^|\.)(adimg|pay|sax|sdkapp|sdkclick|trends|u1\.img|wbapp|wbclick|wbpctips)\.mobile\.sina\.cn$
+(^|\.)(ad|ad\d|adbox|adm|d\d|dcads|dmp|leju|sax|sax\d|slog)\.sina\.com(\.cn|)$
+(^|\.)(alitui|biz|game|wax)\.weibo\.com(\.cn|)$
+(^|\.)cre\.dp\.sina\.cn$
+(^|\.)gw5\.push\.mcp\.weibo\.cn$
+(^|\.)log\.mix\.sina\.com\.cn$
+(^|\.)mobileads\.dx\.cn$
+(^|\.)newspush\.sinajs\.cn$
+(^|\.)sdkapp\.uve\.weibo\.com$
+(^|\.)tui\.weibo\.com$
+(^|\.)wbapp\.uve\.weibo\.com$
+(^|\.)zymo\.mps\.weibo\.com$
+
+# Sougou
+(^|\.)(123|adsence|brand|cpc|epro|fair|files2|goto|golden1|inte|iwan|lu|pb|pd|pv|theta|wan|wangmeng)\.sogou\.com$
+(^|\.)(123|galaxy|lu)\.sogoucdn\.com$
+(^|\.)amfi\.gou\.sogou\.com$
+
+# Teleplus
+(^|\.)applovin\.com$
+(^|\.)guangzhuiyuan\.com$
+
+# Toutiao
+(^|\.)(ad|sm|dsp|nativeapp|partner)\.toutiao\.com$
+
+# Twitter
+(^|\.)(ads|syndication|syndication-o|analytics|scribe|p)\.twitter\.com$
+(^|\.)ads-twitter\.com$
+(^|\.)tellapart\.com$
+(^|\.)urls\.api\.twitter\.com$
+
+# UC ali
+(^|\.)(adslot|applog|track)\.uc\.cn$
+(^|\.)(cms|puds|uc|ucsec1|ucsec)\.ucweb\.com$
+(^|\.)(log|patriot)\.cs\.pp\.cn$
+(^|\.)api\.mp\.uc\.cn$
+(^|\.)client\.video\.ucweb\.com$
+(^|\.)dispatcher\.upmc\.uc\.cn$
+(^|\.)huichuan\.sm\.cn$
+(^|\.)iflow\.uczzd(\.\w{2,3}){1,2}$
+(^|\.)m\.uczzd\.cn$
+(^|\.)server\.m\.pp\.cn$
+(^|\.)u\.uc123\.com$
+(^|\.)u\.ucfly\.com$
+
+# Weifeng
+(^|\.)aoodoo\.feng\.com$
+(^|\.)fengbuy\.com$
+(^|\.)push\.feng\.com$
+(^|\.)we\.tm$
+
+# WPS Office
+(^|\.)(bannera|rating6|cloudservice.*)\.kingsoft-office-service\.com$
+(^|\.)(docerad|gou|info|minfo|notify|pcfg|push|wpsweb-dc)\.wps\.cn$
+(^|\.)ad\.docer\.wps\.cn$
+(^|\.)adm\.zookingsoft\.com$
+(^|\.)bole\.shangshufang\.ksosoft\.com$
+(^|\.)counter\.kingsoft\.com$
+(^|\.)dl\.op\.wpscdn\.cn$
+(^|\.)hoplink\.ksosoft\.com$
+(^|\.)ic\.ksosoft\.com$
+(^|\.)img.*\.mini\.cache\.wps\.cn$
+(^|\.)img\.gou\.wpscdn\.cn$
+(^|\.)ios-informationplatform\.wps\.cn$
+(^|\.)mo\.res\.wpscdn\.cn$
+(^|\.)news\.docer\.com$
+(^|\.)news\.op\.wpscdn\.cn$
+(^|\.)pc\.uf\.ksosoft\.com$
+(^|\.)pixiu\.shangshufang\.ksosoft\.com$
+(^|\.)up\.wps\.kingsoft\.com$
+
+# Wi-Fi key
+(^|\.)(c|cdsget|news-imgpb|wifiapi\d\d|wkanc)\.51y5\.net$
+
+# Ximalaya 喜马拉雅
+(^|\.)(adse|linkeye|location|xdcs-collector)\.ximalaya\.com$
+
+# Xunlei 迅雷app&看看
+(^|\.)biz5\.kankan\.com$
+(^|\.)float\.kankan\.com$
+(^|\.)logic\.cpm\.cm\.kankan\.com$
+(^|\.)hub5btmain\.sandai\.net$
+(^|\.)hub5emu\.sandai\.net$
+(^|\.)upgrade\.xl9\.xunlei\.com$
+
+# Yahoo
+(^|\.)(ads|adserver|adss|analytics|beap-bc|comet|geo|gemini|p3p|ybp)\.yahoo\.com$
+(^|\.)(analytics|locdrop|onepush)\.query\.yahoo\.com$
+(^|\.)(ard|ane|yads)\.yahoo\.co\.jp$
+(^|\.)(js-apac-ss|partnerads)\.ysm\.yahoo\.com$
+(^|\.)ad\.wretch\.cc$
+(^|\.)clicks\.beap\.bc\.yahoo\.com$
+(^|\.)doubleplay-conf-yql\.media\.yahoo\.com$
+(^|\.)flurry\.com$
+(^|\.)m\.yap\.yahoo\.com$
+(^|\.)uservoice\.com$
+(^|\.)ws\.progrss\.yahoo\.com$
+
+# Zhihu
+(^|\.)(sugar|zhihu-web-analytics)\.zhihu\.com$
 
 # Ads in Video apps********************下面都是
 
