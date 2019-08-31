@@ -26,11 +26,6 @@
 (^|\.)Fengine\.tuifish\.com$
 (^|\.)v\.gdt\.qq\.com$
 
-#MytvSuper & ViuTV
-(^|\.)img\.ads\.tvb\.com$
-(^|\.)api\.ads\.tvb\.com$
-(^|\.)img\.ads\.viu\.tv$
-
 # 广告关键词
 (^|\.)\w*admarvel\w*\.\w*$
 (^|\.)\w*admaster\w*\.\w*$
