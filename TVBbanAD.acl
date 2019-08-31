@@ -51,7 +51,6 @@
 
 #MytvSuper & ViuTV
 (^|\.)img\.ads\.tvb\.com$
-(^|\.)api\.ads\.tvb\.com$
 (^|\.)img\.ads\.viu\.tv$
 
 #多开分身
