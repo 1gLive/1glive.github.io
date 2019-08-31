@@ -15,17 +15,6 @@
 [outbound_block_list]
 # 禁止访问列表
 
-#多开分身
-(^|\.)feilongwl\.cn$
-(^|\.)91ishare\.cn$
-
-#车来了
-(^|\.)ads\.voiceads\.cn$
-(^|\.)(ad|atrace)\.chelaile\.net\.cn$
-(^|\.)pgdt\.ugdtimg\.com$
-(^|\.)Fengine\.tuifish\.com$
-(^|\.)v\.gdt\.qq\.com$
-
 # 广告关键词
 (^|\.)\w*admarvel\w*\.\w*$
 (^|\.)\w*admaster\w*\.\w*$
@@ -59,6 +48,22 @@
 #(^|\.)ad\d{0,3}\..*$
 #(^|\.)ads\d{0,3}\..*$
 (^|\.)tracking\..*$
+
+#MytvSuper & ViuTV
+(^|\.)img\.ads\.tvb\.com$
+(^|\.)api\.ads\.tvb\.com$
+(^|\.)img\.ads\.viu\.tv$
+
+#多开分身
+(^|\.)feilongwl\.cn$
+(^|\.)91ishare\.cn$
+
+#车来了
+(^|\.)ads\.voiceads\.cn$
+(^|\.)(ad|atrace)\.chelaile\.net\.cn$
+(^|\.)pgdt\.ugdtimg\.com$
+(^|\.)Fengine\.tuifish\.com$
+(^|\.)v\.gdt\.qq\.com$
 
 # 163
 (^|\.)(adgeo|bobo|fa|g|g1|gb|nex)(\.corp|)\.163\.com$
