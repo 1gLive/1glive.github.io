@@ -46,7 +46,6 @@
 (^|\.)\w*wlmonitor\w*\.\w*$
 (^|\.)\w*zjtoolbar\w*\.\w*$
 (^|\.)ad\d{0,3}\..*$
-(^|\.)ads\d{0,3}\..*$
 (^|\.)tracking\..*$
 
 #MytvSuper & ViuTV
