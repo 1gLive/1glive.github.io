@@ -7774,6 +7774,7 @@
 (^|\.)\w*abema\w*\.\w*$
 (^|\.)\w*appledaily\w*\.\w*$
 (^|\.)\w*avtb\w*\.\w*$
+(^|\.)\w*bbc\w*\.\w*$
 (^|\.)\w*beetalk\w*\.\w*$
 (^|\.)\w*blogspot\w*\.\w*$
 (^|\.)\w*dropbox\w*\.\w*$
@@ -8019,7 +8020,6 @@
 (^|\.)amazon\.com$
 (^|\.)ameblo\.jp$
 (^|\.)ampproject\.org$
-(^|\.)cdn\.ampproject\.org$
 (^|\.)americangreencard\.com$
 (^|\.)americanunfinished\.com$
 (^|\.)amiblockedornot\.com$
@@ -8531,6 +8531,7 @@
 (^|\.)cdjp\.org$
 (^|\.)cdn-apple\.com$
 (^|\.)cdn-images\.mailchimp\.com$
+(^|\.)cdn\.ampproject\.org$
 (^|\.)cdn\.assets\.lfpcontent\.com$
 (^|\.)cdn\.helixstudios\.net$
 (^|\.)cdn\.printfriendly\.com$
