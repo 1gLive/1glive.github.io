@@ -37,7 +37,8 @@ function initApp() {
 	currentTime = document.getElementById('currentTime');
 
 
-	var api_domain = "1glive2021.000webhostapp.com";
+	//var api_domain = "1glive2021.000webhostapp.com";
+	var api_domain = "uapi.1glive.cn";
 	//var api_domain = hpconfig.api_domain;
 	var api_url;
 	if(hpvars.videoType == "live"){
