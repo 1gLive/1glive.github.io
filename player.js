@@ -42,9 +42,9 @@ function initApp() {
 	//var api_domain = hpconfig.api_domain;
 	var api_url;
 	if(hpvars.videoType == "live"){
-		api_url = "https://" + api_domain + "/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_"+getBrowser()+"&type=channel&id=" + hpvars.channel_code + "&token=" + hpvars.token;
+		api_url = "http://" + api_domain + "/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_"+getBrowser()+"&type=channel&id=" + hpvars.channel_code + "&token=" + hpvars.token;
 	} else {
-		api_url = "https://" + api_domain + "/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_"+getBrowser()+"&type=video&id=" + hpvars.videoId + "&token=" + hpvars.token;
+		api_url = "http://" + api_domain + "/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_"+getBrowser()+"&type=video&id=" + hpvars.videoId + "&token=" + hpvars.token;
 	}
 	printLog("api_url= "+api_url);
 	var jsonPromise = $.ajax({
