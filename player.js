@@ -91,7 +91,6 @@ function initPlayer() {
 	$(".adContainer").remove();
 	$(".epg-right").remove();
 	$(".epg-left").css("width","945px");
-	$(".live-epg.epg-left.epg.epg-row.epg-programme").css("width","837px");
 	if (apiInfo.profiles.hasOwnProperty("auto")){
 		defaultQuality = "auto";
 	} else if (apiInfo.profiles.hasOwnProperty("low")){
@@ -596,7 +595,7 @@ function onError(error) {
     	slaveExpiredRedirect("HP01-"+error.code);
    	} else if(error.category == 1 || error.category == 6){
      	hidePlayer("HP01-"+error.code);
-		video.pause();
+		video.play();
 	}
 	//window.youbora.errorHandler("HP01-"+error.code);
 }
@@ -857,6 +856,7 @@ function langConvert(src) {
 				convert = 'auto';
 		}
 	}
+	$(".live-epg.epg-left.epg.epg-row.epg-programme").css("width","837px");
 	return convert;
 }
 
