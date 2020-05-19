@@ -1,0 +1,284 @@
+#big-body-bg {
+	color: #3c3c3c
+}
+
+.live-epg-wrap {
+	overflow: hidden
+}
+
+.live-epg,.live-epg-wrap {
+	height: 335px;
+	background: #fff
+}
+
+.live-epg {
+	width: 975px;
+	padding: 10px 15px 0
+}
+
+.live-epg .epg-left {
+	float: left;
+	width: 612px
+}
+
+.live-epg .epg-left .current-channel {
+	margin-top: 8px;
+	height: 30px
+}
+
+.live-epg .epg-left .current-channel div {
+	float: left
+}
+
+.live-epg .epg-left .current-channel .channel-no {
+	width: 23px;
+	height: 23px;
+	padding-left: 5px;
+	padding-top: 2px;
+	margin-right: 15px;
+	font-size: 13px;
+	color: #fff;
+	background: url(https://s.img.tvb.com/mytvsuper/web/img/live_green_spot.png?t=123) no-repeat
+}
+
+.live-epg .epg-left .current-channel .channel-no-3 {
+	padding-left: 0
+}
+
+.live-epg .epg-left .current-channel .channel-name {
+	max-width: 525px;
+	font-weight: 700;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.live-epg .epg-left .current-channel .to-epg {
+	float: right;
+	padding: 0 5px;
+	margin-right: 7px;
+	font-size: 13px;
+	border: 1px solid #3c3c3c;
+	border-radius: 3px
+}
+
+.live-epg .epg-left .current-channel .to-epg:hover {
+	opacity: .8
+}
+
+.live-epg .epg-left .epg {
+	height: 250px;
+	padding-bottom: 10px;
+	background-color: #ebebeb
+}
+
+.live-epg .epg-left .epg .epg-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 41px;
+	overflow: hidden
+}
+
+.live-epg .epg-left .epg .epg-row div {
+	padding: 10px;
+	font-size: 15px
+}
+
+.live-epg .epg-left .epg .epg-row .epg-time {
+	width: 90px;
+	height: 41px;
+	color: #8c8c8c
+}
+
+.live-epg .epg-left .epg .epg-row .epg-programme {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 837px;
+	height: 40px;
+	padding-left: 0;
+	padding-right: 0;
+	border-bottom: 1px solid #8c8c8c
+}
+
+.live-epg .epg-left .epg .epg-row .epg-programme span {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.live-epg .epg-right {
+	float: right;
+	width: 330px
+}
+
+.live-epg .epg-right .ad300_250 {
+	float: right
+}
+
+.live-channel-listing {
+	min-height: 115px;
+	background: #fff
+}
+
+.live-channel-listing .epg-all {
+	width: 975px;
+	padding: 0 15px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap {
+	position: relative;
+	display: block;
+	float: left;
+	width: 299px;
+	height: 60px;
+	margin-right: 23px;
+	margin-bottom: 7px;
+	background: url(https://s.img.tvb.com/mytvsuper/web/img/live_epg_bg_grey.png) no-repeat
+}
+
+.live-channel-listing .epg-all .epg-all-wrap-3 {
+	margin-right: 0
+}
+
+.live-channel-listing .epg-all .current-channel,.live-channel-listing .epg-all .epg-all-wrap:hover {
+	background: url(https://s.img.tvb.com/mytvsuper/web/img/live_epg_bg_green.png) no-repeat
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .epg-logo {
+	float: left;
+	width: 45px;
+	height: 40px;
+	padding-left: 8px;
+	color: #fff;
+	font-size: 23px;
+	line-height: 40px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .epg-logo-3 {
+	padding-left: 0
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap {
+	float: left;
+	margin-top: 5px;
+	color: #000;
+	font-size: 14px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-row-1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 245px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-row-1 div {
+	font-size: 17px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-row-1 .epg-ch-name {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-row-1 .bar {
+	-webkit-box-flex: 1;
+	-ms-flex: auto 0 0px;
+	flex: auto 0 0;
+	margin-left: 5px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-row-1 .epg-time {
+	-webkit-box-flex: 1;
+	-ms-flex: auto 0 0px;
+	flex: auto 0 0;
+	margin-left: 5px;
+	font-size: 13px
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .right-wrap .epg-programme {
+	width: 245px;
+	font-size: 13px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.live-channel-listing .epg-all .epg-all-wrap .cite-wrap {
+	-webkit-box-flex: 1;
+	-ms-flex: auto 1 0px;
+	flex: auto 1 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 20px;
+	margin-left: 5px;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.epg-loading {
+	background: url(https://s.img.tvb.com/mytvsuper/web/img/ajax-loader.gif) 50% no-repeat
+}
+
+cite {
+	-webkit-box-flex: 12px;
+	-ms-flex: 12px 0 0px;
+	flex: 12px 0 0;
+	background: url(https://s.img.tvb.com/epg/img/png/legend/legends_01.png) no-repeat scroll 0 0 transparent;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	*font-size: 0;
+	*line-height: 0;
+	margin-left: 2px
+}
+
+cite.c2,cite.c3,cite.lc {
+	background-position: 0 -12px
+}
+
+cite.c2_c3 {
+	background-position: 0 -24px
+}
+
+cite.r {
+	background-position: 0 -36px
+}
+
+cite.pg {
+	background-position: 0 -48px
+}
+
+cite.ml {
+	background-position: 0 -60px
+}
+
+cite.m {
+	background-position: 0 -72px
+}
+
+cite.hd {
+	background-position: 0 -84px
+}
+
+cite.empty {
+	background-image: none
+}
