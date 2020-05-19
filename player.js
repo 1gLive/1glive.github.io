@@ -110,10 +110,10 @@ function initPlayer() {
 		hpvars.quality_label = defaultQuality;
 		hpvars.timeLimit = apiInfo.timeshift;
 
-		if(hpvars.timeLimit == 0){
-			seekBar.style.display = 'none';
-			currentTime.style.display = 'none';
-		}
+		//if(hpvars.timeLimit == 0){
+		//	seekBar.style.display = 'none';
+		//	currentTime.style.display = 'none';
+		//}
 	} else {
 		initUrl = apiInfo.profiles[defaultQuality].Default;  // api
 		contentId = initUrl.split(':')[2].split('/')[3];
