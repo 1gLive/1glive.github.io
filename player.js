@@ -537,14 +537,14 @@ function onTextLanguageSelected(event) {
 function updateTime(event) {
 	if (player.isLive()) {
 		//console.log("timeUpdate:::: video.currentTime= "+video.currentTime);
-		var tmpCurrentTime = parseInt(video.currentTime);
-		video.currentTime = tmpCurrentTime;
-		document.getElementById('displayTime').innerHTML = toDateTime(video.currentTime);
+		//var tmpCurrentTime = parseInt(video.currentTime);
+		//video.currentTime = tmpCurrentTime;
+		//document.getElementById('displayTime').innerHTML = toDateTime(video.currentTime);
 	} else {
 		if(!isNaN(video.duration))
       			document.getElementById('displayTime').innerHTML = toDateTime(video.duration, (video.duration >= 3600));
 	}
-	playHeadTime = $('#currentTime').text();
+	//playHeadTime = $('#currentTime').text();
 	//console.log("updateTime::: playHeadTime= "+playHeadTime);
 	//console.log('The current time is ' + video.currentTime + ' Date: ' + toDateTime(video.currentTime));
 }
