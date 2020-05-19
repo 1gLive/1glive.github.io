@@ -256,10 +256,11 @@ function loadPlayer() {
 				hpvars.autoplay = true;
 				if(hpvars.videoType === 'live'){
 					if(hpvars.showFlip){
-						$("#giantPlayButtonContainer").css("display","none");
-						video.volume = 0;
-						video.pause();
-						showFlip();
+						video.play();
+						//$("#giantPlayButtonContainer").css("display","none");
+						//video.volume = 0;
+						//video.pause();
+						//showFlip();
 					} else {
 						video.play();
 					}
@@ -268,15 +269,17 @@ function loadPlayer() {
 					if(hpvars.adTag === ""){
 						printLog("ads undefined");
 						if(hpvars.showFlip){
-							video.pause();
-							showFlip();
+							video.play();
+							//video.pause();
+							//showFlip();
 						} else {
 							video.play();
 						}
 					} else {
-						$("#giantPlayButtonContainer").css("display","none");
-						video.pause();
-						requestAds();
+						video.play();
+						//$("#giantPlayButtonContainer").css("display","none");
+						//video.pause();
+						//requestAds();
 					}
 				}
 			}).catch(error => {
