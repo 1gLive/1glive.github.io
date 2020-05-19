@@ -4,6 +4,7 @@ $(document).ready(function(){
 	if($('.free-purchase').length > 0){
 		$('.free-purchase').click();
 	}
+	$(".live-epg.epg-left.epg.epg-row.epg-programme").css("width","837px");
 });
 
 (function(){
@@ -277,8 +278,8 @@ $(document).ready(function(){
 		if(start_time){
 			var daynight = new Object();
 			if(gbl_current_locale == 'tc'){
-				daynight.am = '涓婂崍';
-				daynight.pm = '涓嬪崍';
+				daynight.am = '上午';
+				daynight.pm = '下午';
 			} else {
 				daynight.am = 'am';
 				daynight.pm = 'pm';
