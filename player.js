@@ -86,6 +86,12 @@ function getVideoInfo(data) {
 
 function initPlayer() {
 	printLog("initPlayer:: ");
+	$(".promo.live-epg").css("background","transparent");
+	$(".live-channel-listing.promo-wrap").css("background","transparent");
+	$(".adContainer").remove();
+	$(".epg-right").remove();
+	$(".epg-left").css("width","945px");
+	$("div.epg-programme").css("width","837px");
 	if (apiInfo.profiles.hasOwnProperty("auto")){
 		defaultQuality = "auto";
 	} else if (apiInfo.profiles.hasOwnProperty("low")){
@@ -177,13 +183,6 @@ function initPlayer() {
 	});
 
 	loadPlayer();
-	
-	$(".promo.live-epg").css("background","transparent");
-	$(".live-channel-listing.promo-wrap").css("background","transparent");
-	$(".adContainer").remove();
-	$(".epg-right").remove();
-	$(".epg-left").css("width","945px");
-	$(".live-epg .epg-left .epg .epg-row .epg-programme").css("width","837px");
 }
 
 function loadPlayer() {
