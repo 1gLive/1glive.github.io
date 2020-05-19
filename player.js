@@ -86,12 +86,12 @@ function getVideoInfo(data) {
 
 function initPlayer() {
 	printLog("initPlayer:: ");
-	$(".promo.live-epg").css("background","transparent");
-	$(".live-channel-listing.promo-wrap").css("background","transparent");
+	//$(".promo.live-epg").css("background","transparent");
+	//$(".live-channel-listing.promo-wrap").css("background","transparent");
 	$(".adContainer").remove();
 	$(".epg-right").remove();
-	$(".epg-left").css("width","945px");
-	$(".epg-programme").css("width","837px");
+	//$(".epg-left").css("width","945px");
+	//$(".epg-programme").css("width","837px");
 	if (apiInfo.profiles.hasOwnProperty("auto")){
 		defaultQuality = "auto";
 	} else if (apiInfo.profiles.hasOwnProperty("low")){
