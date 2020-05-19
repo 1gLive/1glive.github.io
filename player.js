@@ -91,7 +91,7 @@ function initPlayer() {
 	$(".adContainer").remove();
 	$(".epg-right").remove();
 	$(".epg-left").css("width","945px");
-	$("div.epg-programme").css("width","837px");
+	$(".epg-programme").css("width","837px");
 	if (apiInfo.profiles.hasOwnProperty("auto")){
 		defaultQuality = "auto";
 	} else if (apiInfo.profiles.hasOwnProperty("low")){
