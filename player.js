@@ -856,7 +856,6 @@ function langConvert(src) {
 				convert = 'auto';
 		}
 	}
-	$(".live-epg.epg-left.epg.epg-row.epg-programme").css("width","837px");
 	return convert;
 }
 
