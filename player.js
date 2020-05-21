@@ -31,12 +31,13 @@ function initApp() {
 	// Install built-in polyfills to patch browser incompatibilities.
 	hpvars.displaytxt = '';
 	shaka.polyfill.installAll();
-
+	
+	//document.getElementById('playPauseButton').style.display='block';
 	video = document.getElementById('video');
 	seekBar = document.getElementById('seekBar');
 	currentTime = document.getElementById('currentTime');
-
-
+	//document.getElementById('playPauseButton').textContent = '';
+	document.getElementById('giantPlayButton').textContent = '';
 	//var api_domain = "1glive2021.000webhostapp.com";
 	//var api_domain = "uapi.1glive.cn";
 	var api_domain = hpconfig.api_domain;
@@ -84,6 +85,10 @@ function getVideoInfo(data) {
 	apiInfo = data;
 }
 
+function Live_broadcast_paused() {
+	if (video.paused) {video.play();} else {video.pause();}
+}
+
 function initPlayer() {
 	printLog("initPlayer:: ");
 	//$(".promo.live-epg").css("background","transparent");
@@ -91,6 +96,10 @@ function initPlayer() {
 	$(".adContainer").remove();
 	$(".epg-right").remove();
 	$(".epg-left").css("width","945px");
+	$("#playPauseButton").css({"display":"block", "position":"relative", "width":"32px", "height":"28px", "margin":"5px 2px"});
+	
+	document.getElementById('playPauseButton').onclick = Live_broadcast_paused;
+	document.getElementById('playPauseButton').onclick = Live_broadcast_paused;;
 	if (apiInfo.profiles.hasOwnProperty("auto")){
 		defaultQuality = "auto";
 	} else if (apiInfo.profiles.hasOwnProperty("low")){
@@ -255,11 +264,10 @@ function loadPlayer() {
 				hpvars.autoplay = true;
 				if(hpvars.videoType === 'live'){
 					if(hpvars.showFlip){
-						video.play();
-						//$("#giantPlayButtonContainer").css("display","none");
-						//video.volume = 0;
-						//video.pause();
-						//showFlip();
+						$("#giantPlayButtonContainer").css("display","none");
+						video.volume = 0;
+						video.pause();
+						showFlip();
 					} else {
 						video.play();
 					}
@@ -268,17 +276,15 @@ function loadPlayer() {
 					if(hpvars.adTag === ""){
 						printLog("ads undefined");
 						if(hpvars.showFlip){
-							video.play();
-							//video.pause();
-							//showFlip();
+							video.pause();
+							showFlip();
 						} else {
 							video.play();
 						}
 					} else {
-						video.play();
-						//$("#giantPlayButtonContainer").css("display","none");
-						//video.pause();
-						//requestAds();
+						$("#giantPlayButtonContainer").css("display","none");
+						video.pause();
+						requestAds();
 					}
 				}
 			}).catch(error => {
@@ -458,7 +464,6 @@ function onTrackSelected(event) {
 			}
 		};
 		player.configure(config);
-
 		player.selectVariantTrack(track, true);
 	}
 */
