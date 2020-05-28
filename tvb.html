@@ -3,22 +3,10 @@
 <head>
 	<title>myTV SUPER</title>
 	
-	<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/lib/jquery-ui.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/lib/jquery.lightbox.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/lib/colorbox.css" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/lib/bootstrap.css" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/lib/bootstrap-theme.min.css" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/form.css?id=f076fcb0eff584047169" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/common_all_platforms.css?id=af0031c4e6c41ad6d1a3" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/common_all_platforms_img_s.css?id=d8859de0dc9bbd1b3aea" type="text/css" media="screen" />
 <script src="https://s.img.tvb.com/mytvsuper/web/js/lib/jquery-1.11.2.min.js"></script>
 <script src="https://s.img.tvb.com/mytvsuper/web/js/lib/jquery-ui.js"></script>
 <script src="https://s.img.tvb.com/mytvsuper/web/js/lib/bootstrap.min.js"></script>
-<script src="https://www.mytvsuper.com/js/lib/jquery.browser.min.js"></script>
-<script src="https://s.img.tvb.com/mytvsuper/web/js/lib/cookie.js"></script>
-<script type="text/javascript" src="https://s.img.tvb.com/mytvsuper/web/js/lib/jquery.colorbox.js"></script>
 <script src="https://s.img.tvb.com/mytvsuper/web/js/common.js?id=6c7693ad00bc29e3c479"></script>
-<script src="https://s.img.tvb.com/mytvsuper/web/js/flip_prompt.js?id=d73eb5ce8e0648de8288"></script>
 
 
 <script>
@@ -72,137 +60,6 @@ function getDeviceID() {
 }
 </script>
 
-<!-- Google Tag Manager -->
-<script src="https://ana-js-dg6lzb57ha-an.a.run.app/mytvs/ana.js"></script>
-
-<script src="https://s.img.tvb.com/mytvsuper/web/js/survey.js?id=0c6185fdf2679ddc79b6"></script>
-	<!-- Start GPT -->
-<script src="https://ads-js-prd-cvcf4dpepa-an.a.run.app/mytvs/ads.js"></script>
-<script type='text/javascript'>
-webAds.baseObject = {
-	cp:{
-	dtype:'pc',user:'free',channel:'inews',category:'x',programme:'x',episode:'x',vtype:'live',vstage:'x',uservstage:'freex',library:'x',cid:'777473164',refid:'x',service:'standard'	},
-	purl:'',
-	ppid:777473164,		cmsid: 1230,
-		vid: 'live'
-	};
-
-webAds.ads_unit = '/7299/mytvs.pc.web.prod/live_inews';
-webAds.vdo_path = '';
-webAds.ads_path = JSON.parse('{"template":"","main":"","cp":"","lib":"","cat":""}');
-
-webAds.static_ads_queue = [];
-
-	webAds.static_ads = webAds.cloneBaseObject();
-	webAds.static_ads.gpt = [
-															{
-					id:'div-gpt-ad-lrec-1',
-					iu:webAds.ads_unit+'/lrec',
-					path: webAds.ads_path,
-					sz:[300, 250],
-					cp:{ adtype:'lrec1'},
-					when:{
-						empty: function(){
-							handleEmptyAd('lrec','div-gpt-ad-lrec-1');
-						}
-					}
-				},
-								];
-		webAds.static_ads.ima = [
-		{
-			id:'player',
-			iu:webAds.ads_unit+webAds.vdo_path,
-			path: webAds.ads_path,
-			sz:[1024, 768],
-			cp:{ adtype:'video'},
-			rule:1
-		}
-	];
-	
-function handleEmptyAd(ad_type, ad_id){
-	switch(ad_type){
-		case 'sb':
-			$('#'+ad_id).parents('.ad975_100').hide();
-			$('#'+ad_id).parents('.sb-wrap').hide();
-			break;
-		case 'lrec':
-			var slider_without_ad_size = '1040px';
-			if ( $( "#mpm" ).length ) {
-				if(ad_id == 'div-gpt-ad-lrec-1'){
-					$('#type_1').css('width','100%');
-					$('#'+ad_id).parents('.editorial_poster_container').find('.slick-with-ad').css('width',slider_without_ad_size);
-					$(function(){
-						$('#'+ad_id).parents('.editorial_poster_container').find('.slick-slider').slick('unslick').slick({
-							dots: false,
-							infinite: false,
-							speed: 300,
-							slidesToShow: 5,
-							slidesToScroll: 5
-						});
-					});
-					$(function(){
-					$('#type_2').css('width','100%');
-					$('#editorial_2').css('width',slider_without_ad_size);
-						$('#editorial_2.slick-slider').slick('unslick').slick({
-							dots: false,
-							infinite: false,
-							speed: 300,
-							slidesToShow: 5,
-							slidesToScroll: 5
-						});
-					});
-				}
-				if(ad_id == 'div-gpt-ad-lrec-2'){
-					$('#type_4').css('width','100%');
-					$('#'+ad_id).parents('.editorial_poster_container').find('.slick-with-ad').css('width',slider_without_ad_size);
-					$(function(){
-						$('#'+ad_id).parents('.editorial_poster_container').find('.slick-slider').slick('unslick').slick({
-							dots: false,
-							infinite: false,
-							speed: 300,
-							slidesToShow: 5,
-							slidesToScroll: 5
-						});
-					});
-					$(function(){
-					$('#type_5').css('width','100%');
-					$('#editorial_5').css('width',slider_without_ad_size);
-						$('#editorial_5.slick-slider').slick('unslick').slick({
-							dots: false,
-							infinite: false,
-							speed: 300,
-							slidesToShow: 5,
-							slidesToScroll: 5
-						});
-					});
-				}
-			}
-			if($('#'+ad_id).parents('.ad300_250').length > 0){
-				if($('#'+ad_id).parents('.ad300_250').parent('.lrec').length > 0){
-					$('#'+ad_id).parents('.ad300_250').parent('.lrec').hide();
-				} else {
-					$('#'+ad_id).parents('.ad300_250').hide();
-				}
-			}
-			break;
-		case 'flrec':
-			if($('#'+ad_id).parents('.ad300_250').length > 0){
-				if($('#'+ad_id).parents('.ad300_250').parent('.lrec').length > 0){
-					$('#'+ad_id).parents('.ad300_250').parent('.lrec').hide();
-				} else {
-					$('#'+ad_id).parents('.ad300_250').hide();
-				}
-			}
-			break;
-		case 'wsky':
-			$('#'+ad_id).parent().hide();
-			break;
-		default:
-			break;
-	}
-}
-</script>
-<!-- End GPT -->
 	<link rel="stylesheet" href="https://s.img.tvb.com/mytvsuper/web/css/promo.css?id=000764e8594d2a8d6a16"/>
 				</head>
 <body class=" ">
