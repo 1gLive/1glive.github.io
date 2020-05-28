@@ -136,7 +136,7 @@ function getDeviceID() {
 	hpvars.is_master = 'true'; // true or false
 	hpvars.customer_stage ='free';//free or paid
 	hpvars.resolution = screen.width+"X"+screen.height;
-	hpvars.displaytxt = '20203336379460527';
+	hpvars.displaytxt = '';
 
 	hpvars.adTag = "";
 	//hpvars.adTag = ads.ima.tag('player');
@@ -217,12 +217,12 @@ function getDeviceID() {
     </div>
 <script>
 function initVideoPlayer(){
-//initApp();
-//init_html5_action();
+	initApp();
+	init_html5_action();
 }
 $( document ).ready(function() {
-		initApp();
-		init_html5_action();
+	//initApp();
+	//init_html5_action();
 });
 </script>
 			</div>
