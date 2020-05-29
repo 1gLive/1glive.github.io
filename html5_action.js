@@ -61,7 +61,7 @@ function init_html5_action() {
     try {
         ana.reg("video", "player");
     } catch (e) {
-        console.log("ads error =" + e);
+        //console.log("ads error =" + e);
     }
 }
 
