@@ -587,22 +587,7 @@ function onErrorEvent(event) {
 }
 
 function onError(error) {
-	// Log the error.
-	//console.error('Error code', error.code, 'object', error);
-	//printLog("onError:: error code= "+error.code);
-	if(!youboraError1001){
-		window.youbora.errorHandler("HP01-"+error.code,"HP01-"+error.code+", data="+error.data.toString());
-		if(error.code == 1001){
-			youboraError1001 = true;
-		}
-	}
-    if(error.code == "6007"){
-    	slaveExpiredRedirect("HP01-"+error.code);
-   	} else if(error.category == 1 || error.category == 6){
-     	hidePlayer("HP01-"+error.code);
-		video.play();
-	}
-	//window.youbora.errorHandler("HP01-"+error.code);
+
 }
 
 // ads
