@@ -311,6 +311,8 @@ function loadPlayer() {
         } else if(player.getTextTracks().length !== 0){
             player.setTextTrackVisibility(true);
         }
+		updateTracks();
+		updateTextLanguages();
 
 	}).catch(onError); // onError is executed if the asynchronous load fails.
 }
@@ -404,10 +406,11 @@ function updateLanguageOptions(type, list, languages, tracks) {
 
 	} else {
 	// Populate list with new options.
+		var i = 1;
 		languages.forEach(function(lang) {
 			var option = document.createElement('option');
 			if(type == "audio" && hpvars.videoType === "live"){
-				option.textContent = langConvert(lang+"_au");
+				option.textContent = langConvert("au"+i);
 			} else {
 				option.textContent = langConvert(lang);
 			}
@@ -417,6 +420,7 @@ function updateLanguageOptions(type, list, languages, tracks) {
 				selectedAudioLang = selectedTrack.language;
 			}
 			list.appendChild(option);
+			i++;
 		});
 	}
 }
@@ -491,11 +495,13 @@ function onTrackSelected(event) {
 		selectedQulity = option;
 		player.load(url, video.currentTime).then(function() {
 			//setQualityLabel(hpvars.quality_label);
-			if(hpvars.videoType != 'live')
+			if(hpvars.videoType != 'live'){
 				player.addTextTrack(subtitleUrl, Textlang, 'subtitle', 'application/ttml+xml', null);
-			else
+			} else {
 				refreshTextTrack();
+			}
 			video.play();
+			player.setTextTrackVisibility(true);
 		}).catch(onError);
 	}
 }
@@ -532,6 +538,7 @@ function onTextLanguageSelected(event) {
 			player.load(url, video.currentTime).then(function() {
 				player.addTextTrack(subtitleUrl, language, 'subtitle', 'application/ttml+xml', null);
 				video.play();
+				player.setTextTrackVisibility(true);
 				//refreshTextTrack();
 			}).catch(onError);
 		}
@@ -818,13 +825,13 @@ function langConvert(src) {
 				convert = 'Auto';
 				break;
 			case 'low':
-				convert = 'Low';
+				convert = 'low';
 				break;
 			case 'high':
-				convert = 'Middle';
+				convert = 'middle';
 				break;
 			case 'hd':
-				convert = 'High';
+				convert = 'high';
 				break;
 			case 'chi':
 			case 'tc':
