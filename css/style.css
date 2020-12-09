@@ -788,10 +788,9 @@ body a {
 	.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
 	font-size:3vw!important
 }
-
-.jwplayer:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio) .jw-controls-backdrop {
-	opacity: 0;
-	background-color: #000
+}.jwplayer:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio) .jw-controls-backdrop {
+	opacity:.5;
+	background-color:#000
 }
 
 .jw-slider-time .jw-slider-container .jw-progress {
@@ -1019,7 +1018,9 @@ body a {
 	right: 24px;
 	font-weight: 500
 }
-
+.LivePlayer .btn-issues {
+	right:24px
+}
 .LivePlayer .btn-channel {
 	right: 90px;
 	font-weight: 500
@@ -1083,20 +1084,16 @@ body a {
 }
 
 .LivePlayer .EPGInfo {
-	display: none;
-	position: absolute;
-	top: 16px;
-	left: 16px;
-	color: #fff;
-	width: auto!important;
-	height: auto!important;
-	max-width: 50%;
-	line-height: 1.5
+	display:none;
+	position:absolute;
+	top:16px;
+	color:#fff;
+	width:100%;
+	line-height:1.5
 }
 
 .fullscreen-enabled .LivePlayer .EPGInfo {
-	top: 32px;
-	left: 32px
+	top:32px
 }
 
 .LivePlayer .EPGInfo .program_title {
@@ -1199,7 +1196,9 @@ body a {
 	content: "Episodes";
 	font-size: 11px
 }
-
+.VODPlayer .btn-issues {
+	right:24px
+}
 .VODPlayer .btn-top .jw-icon {
 	background-size: 32px;
 	width: 32px;
@@ -1215,15 +1214,12 @@ body a {
 }
 
 .VODPlayer .EPGInfo {
-	display: block;
-	position: absolute;
-	top: 16px;
-	left: 66px;
-	color: #fff;
-	width: auto!important;
-	height: auto!important;
-	max-width: 50%;
-	line-height: 1.5
+	display:block;
+	position:absolute;
+	top:16px;
+	color:#fff;
+	width:100%;
+	line-height:1.5
 }
 
 .VODPlayer .EPGInfo .program_title {
@@ -1252,8 +1248,7 @@ body a {
 	-ms-flex-order: 3;
 	order: 3
 }
-
-@media(max-width:500px) {
+@media(max-width:569px) {
 	.VODPlayer .EPGInfo .program_title {
 		font-size: 12px
 	}
@@ -1314,16 +1309,17 @@ article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section {
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-	background-color: #fff
-}[tabindex="-1"]:focus {
-	outline: 0!important
+	margin:0;
+	font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+[tabindex="-1"]:focus {
+	outline:0!important
 }
 
 hr {
@@ -1496,12 +1492,14 @@ button,input {
 }
 
 button,select {
-	text-transform: none
-}[type=reset],[type=submit],button,html [type=button] {
-	-webkit-appearance: button
-}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
-	padding: 0;
-	border-style: none
+	text-transform:none
+}
+[type=reset],[type=submit],button,html [type=button] {
+	-webkit-appearance:button
+}
+[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+	padding:0;
+	border-style:none
 }
 
 input[type=checkbox],input[type=radio] {
@@ -1539,14 +1537,17 @@ legend {
 }
 
 progress {
-	vertical-align: baseline
-}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
-	height: auto
-}[type=search] {
-	outline-offset: -2px;
-	-webkit-appearance: none
-}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration {
-	-webkit-appearance: none
+	vertical-align:baseline
+}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button {
+	height:auto
+}
+[type=search] {
+	outline-offset:-2px;
+	-webkit-appearance:none
+}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration {
+	-webkit-appearance:none
 }
 
 ::-webkit-file-upload-button {
@@ -1564,9 +1565,10 @@ summary {
 }
 
 template {
-	display: none
-}[hidden] {
-	display: none!important
+	display:none
+}
+[hidden] {
+	display:none!important
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
@@ -4863,7 +4865,8 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label:after {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E")
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label:before {
@@ -4871,7 +4874,8 @@ tbody.collapse.show {
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label:after {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E")
 }
 
 .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label:before {
@@ -4891,7 +4895,8 @@ tbody.collapse.show {
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label:after {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E")
 }
 
 .custom-radio .custom-control-input:disabled:checked~.custom-control-label:before {
@@ -4899,20 +4904,21 @@ tbody.collapse.show {
 }
 
 .custom-select {
-	display: inline-block;
-	width: 100%;
-	height: calc(2.25rem + 2px);
-	padding: .375rem 1.75rem .375rem .75rem;
-	line-height: 1.5;
-	color: #495057;
-	vertical-align: middle;
-	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
-	background-size: 8px 10px;
-	border: 1px solid #ced4da;
-	border-radius: .25rem;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none
+	display:inline-block;
+	width:100%;
+	height:calc(2.25rem + 2px);
+	padding:.375rem 1.75rem .375rem .75rem;
+	line-height:1.5;
+	color:#495057;
+	vertical-align:middle;
+	background:#fff url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size:8px 10px;
+	border:1px solid #ced4da;
+	border-radius:.25rem;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none
 }
 
 .custom-select:focus {
@@ -5550,7 +5556,8 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
 .navbar-light .navbar-text {
@@ -5587,7 +5594,8 @@ tbody.collapse.show {
 }
 
 .navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
 .navbar-dark .navbar-text {
@@ -7148,11 +7156,13 @@ button.close {
 }
 
 .carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
 }
 
 .carousel-control-next-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+	background-image:url("data:image/svg+xml;
+	charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
 }
 
 .carousel-indicators {
@@ -10984,8 +10994,7 @@ a.text-dark:focus,a.text-dark:hover {
 .Home .Hot .carousel-control-next,.Home .Hot .carousel-control-prev,.Home .Topic .carousel-control-next,.Home .Topic .carousel-control-prev {
 	top: -72px
 }
-
-@media (max-width:500px) {
+@media (max-width:569px) {
 	.Home .Rows .section-title {
 		font-size: 26px
 	}
@@ -11093,8 +11102,7 @@ a.text-dark:focus,a.text-dark:hover {
 		margin-bottom: 16px
 	}
 }
-
-@media (max-width:500px) {
+}@media (max-width:569px) {
 	.Encores .ProgrammeList {
 		margin: 0 -9px;
 		padding-top: 78px
@@ -11180,46 +11188,1201 @@ a.text-dark:focus,a.text-dark:hover {
 	transform: translateX(-50%);
 	left: 50%
 }
-
+@media (max-width:1023px) {
+	.PlayerIssue-Modal {
+	width:100%;
+	max-width:100%;
+	height:100%;
+	max-height:100%;
+	margin:0;
+	padding:0
+}
+.PlayerIssue-Modal .modal-content {
+	width:100%;
+	height:100%;
+	border-radius:0;
+	border:0;
+	overflow-y:auto;
+	overflow-x:hidden
+}
+}@media (min-width:1024px) {
+	.PlayerIssue-Modal {
+	max-width:800px;
+	margin:0 auto
+}
+.PlayerIssue-Modal .modal-content {
+	height:486px;
+	min-height:486px;
+	max-height:586px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	border-radius:10px;
+	border:0;
+	-webkit-box-shadow:0 3px 5px rgba(0,0,0,.15);
+	box-shadow:0 3px 5px rgba(0,0,0,.15)
+}
+}.PlayerIssue-Modal button[name=back] {
+	position:absolute
+}
+.PlayerIssue-Modal .icon-close {
+	position:absolute;
+	right:48px;
+	top:32px;
+	width:32px;
+	height:32px;
+	cursor:pointer
+}
+.PlayerIssue-Modal .modal-content .modal-body {
+	width:100%;
+	height:100%;
+	background-color:#000
+}
+.PlayerIssue-Modal .title {
+	color:#979797;
+	font-size:18px;
+	line-height:1.22
+}
+.PlayerIssue-Modal .question-title,.PlayerIssue-Modal .title {
+	font-weight:500;
+	font-stretch:normal;
+	font-style:normal;
+	letter-spacing:normal;
+	font-family:NotoSansCJKtc,sans-serif
+}
+.PlayerIssue-Modal .question-title {
+	color:#fff;
+	font-size:20px
+}
+.PlayerIssue-Modal .complete-title {
+	color:#979797;
+	font-size:28px;
+	font-weight:700;
+	font-stretch:normal;
+	font-style:normal;
+	letter-spacing:normal;
+	font-family:NotoSansCJKtc,sans-serif
+}
+.PlayerIssue-Modal .blue-button {
+	width:110px;
+	height:38px;
+	font-size:18px;
+	color:#fff;
+	background-color:#0a7deb;
+	border:0;
+	border-radius:8px;
+	margin-bottom:32px
+}
+.PlayerIssue-Modal .blue-button:disabled {
+	background-color:#979797;
+	color:#fff
+}
+.PlayerIssue-Modal .grey-button {
+	width:110px;
+	height:38px;
+	font-size:18px;
+	color:#000;
+	background-color:#f6f6f6;
+	border-radius:8px;
+	margin-bottom:32px
+}
+.PlayerIssue-Modal .input {
+	color:#fff;
+	background-color:#000;
+	border-radius:2px;
+	border:1px solid #979797;
+	font-size:16px;
+	height:169px
+}
+.PlayerIssue-Modal .feedback_title {
+	color:#979797;
+	font-size:16px;
+	font-weight:700;
+	width:80px
+}
+.PlayerIssue-Modal .feedback_input {
+	color:#fff;
+	background-color:#000;
+	border-radius:2px;
+	border:1px solid #979797;
+	font-size:16px;
+	height:32px
+}
+.PlayerIssue-Modal .feedback_input.invalid {
+	border:1px solid red
+}
+.PlayerIssue-Modal .terms {
+	color:#fff;
+	font-size:16px;
+	font-weight:700;
+	margin-bottom:20px
+}
+.slider-control>div>div:first-child>div:first-child {
+	background-color:#0a7deb!important
+}
+.jw-controlbar,.jw-display {
+	display:none!important
+}
+.PlayerControlsRoot {
+	position:absolute;
+	bottom:0;
+	height:100%;
+	width:100%;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
+}
+.PlayerControlsRoot,.PlayerControlsRoot .Top {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.PlayerControlsRoot .Top {
+	-webkit-box-align:start;
+	-ms-flex-align:start;
+	align-items:flex-start;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	background-image:-webkit-gradient(linear,left bottom,left top,from(transparent),to(#000));
+	background-image:linear-gradient(0deg,transparent,#000);
+	z-index:1
+}
+.PlayerControlsRoot .Top .Title {
+	width:100%;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	position:absolute;
+	left:0;
+	pointer-events:none
+}
+@media (max-width:569px) {
+	.PlayerControlsRoot .Top .Title {
+	-webkit-box-align:start;
+	-ms-flex-align:start;
+	align-items:start;
+	left:44px
+}
+.PlayerControlsRoot .Top .Title.isAdPlaying {
+	-webkit-box-align:start;
+	-ms-flex-align:start;
+	align-items:start;
+	left:16px
+}
+}.PlayerControlsRoot .Top .Title .ProgrammeTitle,.PlayerControlsRoot .Top .Title .Sponsor {
+	text-shadow:0 0 6px rgba(0,0,0,.5);
+	font-weight:500;
+	color:#fff;
+	max-width:960px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+.PlayerControlsRoot .Top .Title .EpisodeNo,.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	text-shadow:0 0 6px rgba(0,0,0,.5);
+	font-weight:700;
+	color:#fff
+}
+.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	max-width:744px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+.PlayerControlsRoot>.Top {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-transition:-webkit-all .5s ease;
+	transition:-webkit-all .5s ease;
+	-webkit-transition:all .5s ease;
+	transition:all .5s ease;
+	transition:all .5s ease,-webkit-all .5s ease;
+	-webkit-transform-style:"preserve-3d";
+	transform-style:"preserve-3d"
+}
+.PlayerControlsRoot>.Middle {
+	height:100%;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	position:relative
+}
+.PlayerControlsRoot>.Middle>.MiddleControl {
+	position:absolute
+}
+.PlayerControlsRoot>.Bottom,.PlayerControlsRoot>.Middle>.MiddleControl {
+	-webkit-transition:-webkit-all .5s ease;
+	transition:-webkit-all .5s ease;
+	-webkit-transition:all .5s ease;
+	transition:all .5s ease;
+	transition:all .5s ease,-webkit-all .5s ease;
+	-webkit-transform-style:"preserve-3d";
+	transform-style:"preserve-3d"
+}
+.PlayerControlsRoot>.Bottom {
+	background-image:-webkit-gradient(linear,left top,left bottom,from(transparent),to(#000));
+	background-image:linear-gradient(180deg,transparent,#000);
+	z-index:1
+}
+.PlayerControlsRoot .TimeSlider {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	font-weight:700;
+	color:#fff;
+	width:100%;
+	padding:0 24px;
+	pointer-events:auto
+}
+.PlayerControlsRoot .TimeSlider .timeElapsed {
+	font-size:1.5rem;
+	margin-left:16px;
+	width:5ch
+}
+.PlayerControlsRoot .TimeSlider .slider-control>div>div {
+	height:4px!important;
+	border-radius:4px
+}
+.PlayerControlsRoot .TimeSlider .slider-control>div>div>div:nth-child(2) {
+	background-color:hsla(0,0%,100%,.7)!important
+}
+.PlayerControlsRoot .TimeSlider .slider-control>div>div>div:nth-child(3) {
+	width:16px!important;
+	height:16px!important
+}
+.PlayerControlsRoot .TimeSlider .slider-control>div>div>div:nth-child(3)>div>div>div {
+	top:-10px!important;
+	left:-10px!important
+}
+.PlayerControls {
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	position:relative
+}
+.PlayerControls,.PlayerControls .ChannelsControl,.PlayerControls .EpisodesControl {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.PlayerControls .ChannelsControl,.PlayerControls .EpisodesControl {
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	position:absolute;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	background:rgba(42,42,42,.7);
+	height:48px;
+	padding:0 32px;
+	padding-left:28px;
+	padding-right:24px;
+	border-radius:50px;
+	-webkit-transition:-webkit-transform .2s ease;
+	transition:-webkit-transform .2s ease;
+	transition:transform .2s ease;
+	transition:transform .2s ease,-webkit-transform .2s ease;
+	-webkit-transform:translate3d(-50%,0,0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg,0deg);
+	transform:translate3d(-50%,0,0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg,0deg);
+	-webkit-transform-style:"preserve-3d";
+	transform-style:"preserve-3d"
+}
+.PlayerControls .ChannelsControl:hover,.PlayerControls .EpisodesControl:hover {
+	-webkit-transform:translate3d(-50%,0,0) scale3d(1.1,1.1,1.1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg,0deg);
+	transform:translate3d(-50%,0,0) scale3d(1.1,1.1,1.1) rotateX(0deg) rotateY(0deg) rotate(0deg) skew(0deg,0deg)
+}
+@media (min-width:768px) {
+	.EpisodeListModal .VideoItem .video-mask {
+	width:40px
+}
+}.EpisodeListModal .VideoItem .video-mask,.PlayerControlsRoot .VideoItem .video-mask {
+	width:40px;
+	transition:-webkit-transform .2s ease;
+	-webkit-transition:-webkit-transform .2s ease;
+	transition:transform .2s ease;
+	transition:transform .2s ease,-webkit-transform .2s ease;
+	-webkit-transform:translate(-50%,-50%) scaleX(1);
+	transform:translate(-50%,-50%) scaleX(1);
+	-webkit-transform-style:"preserve-3d";
+	transform-style:"preserve-3d"
+}
+.EpisodeListModal .VideoItem:hover .video-mask,.PlayerControlsRoot .VideoItem:hover .video-mask {
+	-webkit-transform:translate(-50%,-50%) scale3d(1.4,1.4,1);
+	transform:translate(-50%,-50%) scale3d(1.4,1.4,1)
+}
+.EpisodeListModal .VideoItem .video-mask .video-mask-image,.PlayerControlsRoot .VideoItem .video-mask .video-mask-image {
+	background-image:url("/assets/img/player-assets/PlayBtn.svg")
+}
+.PlayerControls .AdCountDown {
+	color:#fff;
+	font-size:1.4rem
+}
+.PlayerControls .mainControl {
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row
+}
+.ChannelsControl .channelsControlTitleLink,.EpisodesControl .episodeControlTitleLink,.PlayerControls .mainControl {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.ChannelsControl .channelsControlTitleLink,.EpisodesControl .episodeControlTitleLink {
+	color:#fff!important;
+	cursor:pointer;
+	pointer-events:auto
+}
+.PlayerMoreText {
+	font-size:18px;
+	padding-right:4px;
+	font-weight:700;
+	font-stretch:normal;
+	font-style:normal;
+	line-height:1;
+	letter-spacing:normal;
+	text-align:center;
+	color:#fff;
+	text-shadow:0 0 6px rgba(0,0,0,.5)
+}
+.PlayerControlsRoot .TrailerListContainer {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	pointer-events:auto
+}
+.PlayerControlsRoot .TrailerListContainer span {
+	text-shadow:0 0 6px rgba(0,0,0,.5);
+	font-size:20px;
+	font-weight:700;
+	font-stretch:normal;
+	font-style:normal;
+	line-height:.8;
+	letter-spacing:normal;
+	text-align:center;
+	color:#fff
+}
+.ChannelListVerticalContainer,.EpisodeListVerticalContainer {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	margin:24px 40px 0;
+	height:100%;
+	overflow-y:scroll
+}
+.ChannelListVerticalContainer .video-img-container,.EpisodeListVerticalContainer .video-img-container {
+	min-width:112px;
+	max-width:112px;
+	margin-right:16px
+}
+.ChannelListVerticalContainer .Right,.EpisodeListVerticalContainer .Right {
+	-webkit-box-pack:start!important;
+	-ms-flex-pack:start!important;
+	justify-content:flex-start!important
+}
+.ChannelListHorizontalContainer,.EpisodeListHorizontalContainer {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	width:100%;
+	margin-top:24px;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.ChannelListHorizontalContainer .ChannelList,.EpisodeListHorizontalContainer .EpisodeList {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	overflow-x:scroll;
+	position:relative
+}
+.ChannelList .ChannelItemContainer .bbc-image-wrapper,.EpisodeList .EpisodeItemContainer .bbc-image-wrapper {
+	-webkit-box-shadow:none;
+	box-shadow:none
+}
+.ChannelList .ChannelItemContainer .overlayText,.EpisodeList .EpisodeItemContainer .overlayText {
+	width:100%;
+	height:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	position:absolute;
+	top:0;
+	color:#fff;
+	background-color:rgba(0,0,0,.8)
+}
+.EpisodeList .EpisodeItemContainer .episodeNameU3,.EpisodeList .EpisodeItemContainer .episodeNum {
+	color:#fff!important;
+	font-size:18px
+}
+.EpisodeList .EpisodeItemContainer .episodeNum,.EpisodeList .EpisodeItemContainer .VideoItem .Bottom {
+	height:auto
+}
+.EpisodeList .EpisodeItemContainer .episodeNameU3 {
+	font-weight:500;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical
+}
+.EpisodeListHorizontalContainer .arrowLink {
+	cursor:pointer;
+	pointer-events:auto
+}
+.PlayerControls .otherControl {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex
+}
+.PlayerControlModal {
+	width:100vw;
+	max-width:100vw;
+	height:100vh;
+	max-height:100vh;
+	margin:0;
+	padding:0
+}
+.PlayerControlModal .modal-content {
+	width:100%;
+	height:100%;
+	background-color:rgba(29,29,29,.98);
+	border-radius:0;
+	border:0
+}
+.PlayerControlModal .modal-content .CloseButton {
+	position:absolute;
+	width:24px;
+	height:24px;
+	right:16px;
+	top:24px;
+	cursor:pointer
+}
+.PlayerControlModal .modal-content .title {
+	margin-bottom:32px;
+	font-size:18px;
+	color:#fff;
+	font-weight:700;
+	text-align:center
+}
+.PlayerControlModal .modal-content .modal-body {
+	padding:0;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.PlayerControlModal .modal-content .options {
+	width:100%
+}
+.PlayerControlModal .modal-content button {
+	width:100%;
+	height:60px;
+	font-size:14px;
+	color:#f6f6f6;
+	background-color:transparent;
+	border-radius:0;
+	text-decoration:none
+}
+.PlayerControlModal .modal-content button.active {
+	color:#fff;
+	font-size:16px;
+	font-weight:700;
+	background-color:hsla(0,0%,59%,.3)
+}
+.EpisodeListModal {
+	width:100vw;
+	max-width:100vw;
+	height:100vh;
+	max-height:100vh;
+	margin:0;
+	padding:0
+}
+.EpisodeListModal .modal-content {
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.8);
+	border-radius:0;
+	border:0
+}
+.EpisodeListModal .modal-content .modal-body {
+	height:100%;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding-top:39px
+}
+.PlayerControls .Volumn .ControlPopup {
+	padding:0;
+	left:4px;
+	width:40px;
+	height:140px
+}
+.PlayerControls .Volumn .ControlPopup .slider-control>div>div {
+	width:4px!important;
+	left:7px!important;
+	border-radius:4px!important
+}
+.PlayerControls .Volumn .ControlPopup .slider-control>div>div>div:nth-child(2) {
+	background-color:hsla(0,0%,100%,.7)!important
+}
+.PlayerControls .Volumn .ControlPopup .slider-control>div>div>div:nth-child(3) {
+	width:14px!important;
+	height:14px!important;
+	margin-left:2px!important
+}
+.PlayerControls .Next .ControlPopup {
+	position:absolute;
+	padding:0;
+	left:0;
+	min-width:471px
+}
+.PlayerControls .ControlPopup {
+	padding:18px 12px 16px;
+	border-radius:10px;
+	background-color:#1d1d1d;
+	position:absolute;
+	bottom:48px;
+	left:-55px;
+	width:158px
+}
+.PlayerControls .ControlPopup .title {
+	color:#fff;
+	font-size:24px;
+	font-weight:700;
+	margin-bottom:16px;
+	padding-left:8px
+}
+.PlayerControls .ControlPopup button {
+	text-decoration:none;
+	background-color:transparent;
+	color:#979797;
+	border-radius:8px;
+	width:100%;
+	height:54px;
+	font-size:22px;
+	font-weight:700
+}
+.PlayerControls .ControlPopup button.active {
+	background-color:hsla(0,0%,59%,.3);
+	color:#fff
+}
+.PlayerControlsRoot .Middle {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	z-index:1
+}
+.PlayerControlsRoot .PlayerButton.BackButton {
+	height:auto!important
+}
+.PlayerControlsRoot .PlayerButton {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	pointer-events:auto;
+	cursor:pointer;
+	-webkit-transition:-webkit-transform .2s ease;
+	transition:-webkit-transform .2s ease;
+	transition:transform .2s ease;
+	transition:transform .2s ease,-webkit-transform .2s ease;
+	background-position:50%;
+	background-repeat:no-repeat
+}
+.PlayerControlsRoot .PlayerButton:hover {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1)
+}
+.PlayerControlsRoot .PlayerButton.Play {
+	background-image:url("/assets/img/player-assets/play normal.svg")
+}
+.PlayerControlsRoot .PlayerButton.Play:hover {
+	background-image:url("/assets/img/player-assets/jw-icon-playback-play.svg")
+}
+.PlayerControlsRoot .BackwardButton:active,.PlayerControlsRoot .ForwardButton:active,.PlayerControlsRoot .PlayPauseButton:active {
+	opacity:.6
+}
+@media (max-width:480px) {
+	.PlayerControlsRoot .PlayerButton {
+	width:24px!important;
+	height:24px!important;
+	background-size:24px
+}
+}@media (min-width:481px) and (max-width:767px) {
+	.PlayerControlsRoot .PlayerButton {
+	width:32px!important;
+	height:32px!important;
+	background-size:32px
+}
+}@media (max-width:767px) {
+	.ChannelList .ChannelItemContainer .channelNo {
+	font-size:11px
+}
+.PlayerControlsRoot .Top .Title .Sponsor {
+	font-size:14px
+}
+.PlayerControlsRoot .Top .Title .ProgrammeTitle {
+	font-size:16px;
+	font-weight:700
+}
+.PlayerControlsRoot .Top .Title .EpisodeNo,.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	font-size:14px
+}
+.VODPlayer .PlayerControlsRoot .Top .Title .ProgrammeTitle {
+	font-weight:400;
+	font-size:14px
+}
+.VODPlayer .PlayerControlsRoot .Top .Title .EpisodeNo,.VODPlayer .PlayerControlsRoot .Top .Title .EpisodeTitle {
+	font-size:16px;
+	font-weight:700
+}
+.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	max-width:336px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+.ChannelList .ChannelItemContainer .next_program_title,.ChannelList .ChannelItemContainer .overlayText,.ChannelList .ChannelItemContainer .program_title,.ChannelList .ChannelItemContainer .sponsor,.ChannelList .ChannelItemContainer .upcoming,.EpisodeList .EpisodeItemContainer .episodeNameU3,.EpisodeList .EpisodeItemContainer .episodeNum,.EpisodeList .EpisodeItemContainer .overlayText,.PlayerMoreText {
+	font-size:14px
+}
+.ChannelList .ChannelItemContainer .episode_title,.ChannelList .ChannelItemContainer .next_schedule {
+	font-size:12px
+}
+.ChannelListHorizontalContainer .ChannelList .ChannelItemContainer,.EpisodeListHorizontalContainer .EpisodeList .EpisodeItemContainer {
+	min-width:112px;
+	max-width:112px;
+	margin:0 8px
+}
+.PlayerControlsRoot .Top {
+	padding:16px;
+	margin-top:20px
+}
+.PlayerControls {
+	margin:16px 16px 32px
+}
+.PlayerMoreTextArrow {
+	width:16px;
+	height:16px
+}
+.PlayerControlsRoot .DVRButton {
+	font-size:12px;
+	border:1px solid #fff;
+	border-radius:4px;
+	width:76px;
+	height:22px
+}
+.PlayerControlsRoot .DVRButton .dvrIcon {
+	width:14px;
+	height:14px;
+	margin-right:2px
+}
+.PlayerControlsRoot .LiveStatus {
+	font-size:10px;
+	border-radius:3px;
+	width:59px;
+	height:20px
+}
+.PlayerControlsRoot .LiveStatus .liveIcon {
+	width:16px;
+	height:16px;
+	margin-right:4px
+}
+.PlayerControlsRoot .mobileLiveIcon {
+	width:18px;
+	height:18px;
+	margin-right:4px
+}
+.PlayerControlsRoot .Caption,.PlayerControlsRoot .DVRButton,.VODPlayer .PlayerControlsRoot .SoundTrack {
+	margin-right:16px
+}
+.LivePlayer .PlayerControlsRoot .SoundTrack,.PlayerControlsRoot .Fullscreen {
+	margin-left:16px
+}
+.PlayerControlsRoot .BackwardButton,.PlayerControlsRoot .ForwardButton {
+	width:40px!important;
+	height:40px!important
+}
+.PlayerControlsRoot .PlayPauseButton {
+	width:48px!important;
+	height:48px!important
+}
+.PlayerControls .ChannelsControl,.PlayerControls .EpisodesControl {
+	padding-left:24px;
+	padding-right:24px
+}
+}@media (min-width:768px) {
+	.PlayerControlsRoot .Top .Title .Sponsor {
+	font-size:18px
+}
+.PlayerControlsRoot .Top .Title .ProgrammeTitle {
+	font-size:20px;
+	font-weight:700
+}
+.PlayerControlsRoot .Top .Title .EpisodeNo,.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	font-size:18px
+}
+.VODPlayer .PlayerControlsRoot .Top .Title .ProgrammeTitle {
+	font-weight:400;
+	font-size:18px
+}
+.VODPlayer .PlayerControlsRoot .Top .Title .EpisodeNo,.VODPlayer .PlayerControlsRoot .Top .Title .EpisodeTitle {
+	font-size:20px;
+	font-weight:700
+}
+}@media (min-width:768px) and (max-width:1023px) {
+	.ChannelList .ChannelItemContainer .channelNo {
+	font-size:16px
+}
+.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	max-width:620px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+.PlayerMoreText {
+	font-size:16px
+}
+.ChannelList .ChannelItemContainer .next_program_title,.ChannelList .ChannelItemContainer .overlayText,.ChannelList .ChannelItemContainer .program_title,.ChannelList .ChannelItemContainer .sponsor,.ChannelList .ChannelItemContainer .upcoming,.EpisodeList .EpisodeItemContainer .overlayText {
+	font-size:18px
+}
+.ChannelList .ChannelItemContainer .episode_title,.ChannelList .ChannelItemContainer .next_schedule {
+	font-size:16px
+}
+.ChannelListHorizontalContainer .ChannelList .ChannelItemContainer,.EpisodeListHorizontalContainer .EpisodeList .EpisodeItemContainer {
+	min-width:205px;
+	max-width:205px;
+	margin:0 16px
+}
+.PlayerMoreTextArrow {
+	width:24px;
+	height:24px
+}
+.PlayerControlsRoot .Top {
+	padding:24px
+}
+.PlayerControls {
+	margin:12px 24px 32px
+}
+.PlayerControlsRoot .LiveStatus {
+	font-size:14px;
+	border-radius:3px;
+	width:98px;
+	height:32px
+}
+.PlayerControlsRoot .LiveStatus .liveIcon {
+	width:24px;
+	height:24px;
+	margin-right:8px
+}
+.PlayerControlsRoot .DVRButton {
+	font-size:18px;
+	border:2px solid #fff;
+	border-radius:2px;
+	width:125px;
+	height:36px
+}
+.PlayerControlsRoot .DVRButton .dvrIcon {
+	width:20px;
+	height:20px;
+	margin-right:8px
+}
+.PlayerControlsRoot .Caption,.PlayerControlsRoot .DVRButton,.VODPlayer .PlayerControlsRoot .SoundTrack {
+	margin-right:24px
+}
+.LivePlayer .PlayerControlsRoot .SoundTrack,.PlayerControlsRoot .Fullscreen,.PlayerControlsRoot .Volumn {
+	margin-left:24px
+}
+.PlayerControlsRoot .PlayerButton {
+	width:40px!important;
+	height:50px!important;
+	background-size:40px
+}
+.PlayerControlsRoot .BackwardButton,.PlayerControlsRoot .ForwardButton {
+	width:48px!important;
+	height:48px!important
+}
+.PlayerControlsRoot .PlayPauseButton {
+	width:64px!important;
+	height:64px!important
+}
+}@media (min-width:1024px) and (max-width:1439px) {
+	.ChannelList .ChannelItemContainer .channelNo {
+	font-size:16px
+}
+.PlayerControlsRoot .Top .Title .EpisodeTitle {
+	max-width:620px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+.ChannelList .ChannelItemContainer .next_program_title,.ChannelList .ChannelItemContainer .overlayText,.ChannelList .ChannelItemContainer .program_title,.ChannelList .ChannelItemContainer .sponsor,.ChannelList .ChannelItemContainer .upcoming,.EpisodeList .EpisodeItemContainer .overlayText,.PlayerMoreText {
+	font-size:18px
+}
+.ChannelList .ChannelItemContainer .episode_title,.ChannelList .ChannelItemContainer .next_schedule {
+	font-size:16px
+}
+.ChannelListHorizontalContainer .ChannelList .ChannelItemContainer,.EpisodeListHorizontalContainer .EpisodeList .EpisodeItemContainer {
+	min-width:205px;
+	max-width:205px;
+	margin:0 16px
+}
+.PlayerMoreTextArrow {
+	width:24px;
+	height:24px
+}
+.PlayerControlsRoot .Top {
+	padding:32px
+}
+.PlayerControls {
+	margin:20px 32px 40px
+}
+.PlayerControlsRoot .DVRButton,.PlayerControlsRoot .Next,.PlayerControlsRoot .Pause,.PlayerControlsRoot .Play {
+	margin-right:24px
+}
+.PlayerControlsRoot .LiveStatus {
+	font-size:14px;
+	border-radius:3px;
+	width:98px;
+	height:32px
+}
+.PlayerControlsRoot .LiveStatus .liveIcon {
+	width:24px;
+	height:24px;
+	margin-right:8px
+}
+.PlayerControlsRoot .DVRButton {
+	font-size:18px;
+	border:2px solid #fff;
+	border-radius:2px;
+	width:125px;
+	height:36px
+}
+.PlayerControlsRoot .DVRButton .dvrIcon {
+	width:20px;
+	height:20px;
+	margin-right:8px
+}
+.PlayerControlsRoot .Caption,.PlayerControlsRoot .Fullscreen,.PlayerControlsRoot .Volumn,.VODPlayer .PlayerControlsRoot .SoundTrack {
+	margin-left:24px
+}
+.LivePlayer .PlayerControlsRoot .SoundTrack,.PlayerControlsRoot .PlayerButton {
+	width:40px!important;
+	height:50px!important;
+	background-size:40px
+}
+}@media (min-width:1440px) {
+	.PlayerMoreTextArrow {
+	width:28px;
+	height:28px
+}
+.ChannelList .ChannelItemContainer .channelNo {
+	font-size:14px
+}
+.ChannelList .ChannelItemContainer .overlayText,.EpisodeList .EpisodeItemContainer .overlayText,.PlayerMoreText {
+	font-size:20px
+}
+.ChannelList .ChannelItemContainer .next_program_title,.ChannelList .ChannelItemContainer .program_title,.ChannelList .ChannelItemContainer .upcoming {
+	font-size:18px
+}
+.ChannelList .ChannelItemContainer .episode_title,.ChannelList .ChannelItemContainer .next_schedule,.ChannelList .ChannelItemContainer .sponsor {
+	font-size:16px
+}
+.ChannelListHorizontalContainer .ChannelList .ChannelItemContainer,.EpisodeListHorizontalContainer .EpisodeList .EpisodeItemContainer {
+	min-width:256px;
+	max-width:256px;
+	margin:0 12px
+}
+.PlayerControlsRoot .Top {
+	padding:38px
+}
+.PlayerControls {
+	margin:20px 40px 40px
+}
+.PlayerControlsRoot .DVRButton,.PlayerControlsRoot .Next,.PlayerControlsRoot .Pause,.PlayerControlsRoot .Play {
+	margin-right:32px
+}
+.PlayerControlsRoot .Caption,.PlayerControlsRoot .Fullscreen,.PlayerControlsRoot .Next,.PlayerControlsRoot .SoundTrack,.PlayerControlsRoot .Volumn {
+	margin-left:32px
+}
+.PlayerControlsRoot .LiveStatus {
+	font-size:18px;
+	border-radius:3px;
+	width:118px;
+	height:40px
+}
+.PlayerControlsRoot .LiveStatus .liveIcon {
+	width:32px;
+	height:32px;
+	margin-right:8px
+}
+.PlayerControlsRoot .DVRButton {
+	font-size:20px;
+	border:3px solid #fff;
+	border-radius:8px;
+	width:140px;
+	height:44px
+}
+.PlayerControlsRoot .DVRButton .dvrIcon {
+	width:28px;
+	height:28px;
+	margin-right:8px
+}
+.PlayerControlsRoot .PlayerButton {
+	width:40px!important;
+	height:50px!important;
+	background-size:40px
+}
+}.OverlayCircle {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	opacity:.7;
+	width:160px;
+	height:160px;
+	border-radius:80px;
+	background-color:#000;
+	-webkit-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out
+}
+.OverlayCircle span {
+	padding-top:8px;
+	color:#c6c6c6;
+	font-size:18px
+}
+.OverlayCircle.OverlayCircleTransition-enter {
+	opacity:0;
+	-webkit-transform:scale(.7);
+	transform:scale(.7)
+}
+.OverlayCircle.OverlayCircleTransition-enter-active {
+	opacity:.7;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+.OverlayCircle.OverlayCircleTransition-leave {
+	opacity:.7;
+	-webkit-transition:all .2s linear;
+	transition:all .2s linear
+}
+.OverlayCircle.OverlayCircleTransition-leave-active {
+	opacity:0;
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2)
+}
+.PlayerControlsRoot .DVRButton {
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	color:#fff;
+	font-weight:700;
+	cursor:pointer
+}
+.PlayerControlsRoot .DVRButton,.PlayerControlsRoot .DVRButton>.inner,.PlayerControlsRoot .LiveStatus {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.PlayerControlsRoot .LiveStatus {
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	border-radius:3px;
+	font-weight:500;
+	background-color:#ff1f1f;
+	color:#fff
+}
+.PlayerControlsRoot .LiveStatus.isDVR {
+	background-color:#575757
+}
+.PlayerControlsRoot .LiveStatus>.inner {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.ChannelList .ChannelItemContainer {
+	background-color:transparent;
+	text-decoration:none
+}
+.ChannelList .ChannelItemContainer .channelNo {
+	color:#fff;
+	font-size:14px;
+	font-weight:700;
+	border-radius:3px;
+	background-color:#0a7deb;
+	width:-webkit-fit-content;
+	width:-moz-fit-content;
+	width:fit-content;
+	padding:4px 8px
+}
+.ChannelList .ChannelItemContainer .Menu-link {
+	text-decoration:none!important
+}
+.ChannelListHorizontalContainer .ChannelList .ChannelItemContainer .channelNo {
+	margin-top:7px
+}
+.ChannelListVerticalContainer .ChannelList .ChannelItemContainer {
+	margin-bottom:48px
+}
+.ChannelList .ChannelItemContainer .sponsor {
+	color:#fff!important
+}
+.ChannelList .ChannelItemContainer .program_title {
+	color:#fff!important;
+	font-weight:500
+}
+.ChannelList .ChannelItemContainer .episode_title {
+	color:#fff!important
+}
+.ChannelList .ChannelItemContainer .upcoming {
+	color:#fff!important;
+	font-weight:700
+}
+.ChannelList .ChannelItemContainer .next_program_title,.ChannelList .ChannelItemContainer .next_schedule {
+	color:#979797!important
+}
 .Live .LiveLeftView {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	padding: 10px
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column
 }
-
-@media (min-width:1025px) {
-	.Live .LiveLeftView {
-		padding: 10px 24px
-	}
-}
-
 .Live .fullscreen {
-	width: 100%;
-	height: 393px;
-	position: relative;
-	overflow-y: auto;
-	background: rgba(0,0,0,.7)
+	width:100%;
+	height:calc(100vh - var(--header-height));
+	position:relative;
+	overflow-y:auto;
+	background:rgba(0,0,0,.7)
 }
-
-@media (max-width:500px) {
+@media (max-width:1023px) {
 	.Live .fullscreen {
-		width: 100%;
-		height: 56.25vw;
-		position: relative
-	}
+	height:calc(100vh - var(--header-height) - 100px)
 }
-
-.Live .fullscreen .bm-menu-wrap {
-	width: 390px!important;
-	border-right: 0
+}.Live .fullscreen .bm-menu-wrap {
+	width:390px!important;
+	border-right:0
 }
 
 .Live .fullscreen .bm-menu {
@@ -11239,28 +12402,25 @@ a.text-dark:focus,a.text-dark:hover {
 	z-index: 100;
 	max-width: 100%
 }
-
-@media (max-width:500px) {
+@media (max-width:569px) {
 	.Live .fullscreen .Popup {
-		top: 0;
-		-webkit-transform: translate(-50%);
-		transform: translate(-50%)
-	}
+	top:0;
+	-webkit-transform:translate(-50%);
+	transform:translate(-50%)
 }
-
-.Live .fullscreen .header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	color: #fff;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin: 16px 20px
+}.Live .fullscreen .header {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	position:relative;
+	color:#fff;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	margin:16px 20px
 }
 
 .Live .fullscreen .bm-item-list .header {
@@ -11326,11 +12486,22 @@ a.text-dark:focus,a.text-dark:hover {
 	margin-bottom: 10px;
 	font-weight: 500
 }
-
-.Live .Preview .next_program_title,.Live .Preview .next_schedule {
-	font-size: 14px;
-	color: #979797;
-	font-weight: 500
+.Live .Preview .next_program_title {
+	font-size:16px;
+	color:#979797;
+	font-weight:500;
+	max-width:352px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical
+}
+.Live .Preview .next_schedule {
+	font-size:14px;
+	color:#979797;
+	font-weight:500
 }
 
 .Live .Game {
@@ -11405,16 +12576,35 @@ a.text-dark:focus,a.text-dark:hover {
 	font-size: 16px;
 	margin-bottom: 4px
 }
-
-.Live .Channels .ChannelItem .program_title {
-	color: #979797;
-	font-size: 14px;
-	margin-bottom: 4px
+.Live .Channels .ChannelItem .sponsor {
+	font-size:12px;
+	max-width:144px;
+	-webkit-line-clamp:1
 }
-
+.Live .Channels .ChannelItem .program_title,.Live .Channels .ChannelItem .sponsor {
+	color:#f6f6f6;
+	margin-bottom:4px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-box-orient:vertical
+}
+.Live .Channels .ChannelItem .program_title {
+	font-size:16px;
+	max-width:352px;
+	-webkit-line-clamp:2
+}
 .Live .Channels .ChannelItem .episode_title {
-	color: #979797;
-	font-size: 12px
+	color:#f6f6f6;
+	font-size:16px;
+	max-width:128px;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
 }
 
 .Live .Channels .ChannelItem .channelSelectedOverlay {
@@ -11916,8 +13106,7 @@ a.text-dark:focus,a.text-dark:hover {
 	color: #4a4a4a;
 	font-size: 10px
 }
-
-@media(max-width:500px) {
+@media(max-width:569px) {
 	.EPGDayPicker li a.selected {
 		font-size: 2.4rem;
 		font-weight: 700
@@ -12197,8 +13386,7 @@ a.text-dark:focus,a.text-dark:hover {
 		position: absolute
 	}
 }
-
-@media(max-width:500px) {
+}@media(max-width:569px) {
 	.Programme {
 		margin: 0 -9px
 	}
@@ -12266,8 +13454,7 @@ a.text-dark:focus,a.text-dark:hover {
 .ProgrammeItem .Bottom {
 	min-height: 72px
 }
-
-@media (max-width:500px) {
+@media (max-width:569px) {
 	.ProgrammeItem .episodeNum {
 		right: 4px;
 		bottom: 4px;
@@ -12300,44 +13487,76 @@ a.text-dark:focus,a.text-dark:hover {
 	left: 0;
 	z-index: 12000
 }
-
-.Video .NextVideoPreview {
-	position: absolute;
-	right: 0;
-	bottom: 32px;
-	width: 320px;
-	height: 100px;
-	background-color: #1d1d1d;
-	color: #fff;
-	padding: 5px 0;
-	margin: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center
+@media (max-width:567px) {
+	.Video .NextVideoPreviewContainer {
+	position:absolute;
+	right:0;
+	bottom:0;
+	background-color:#1d1d1d;
+	width:100%
 }
-
-.Video .NextVideoPreview .Right {
-	padding-right: 36px
+}@media (min-width:568px) {
+	.Video .NextVideoPreviewContainer {
+	position:absolute;
+	right:0;
+	bottom:40px;
+	border-radius:8px;
+	background-color:#1d1d1d;
+	min-width:471px
 }
-
-.Video .NextVideoPreview .timer {
-	font-size: 18px
+}.Video .NextVideoPreview {
+	color:#fff;
+	padding:16px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
-
-.Video .NextVideoPreview .episodeNameU3,.Video .NextVideoPreview .episodeNum {
-	font-size: 16px
+.Video .NextVideoPreview .PreviewImageContainer {
+	position:relative;
+	width:240px;
+	height:135px;
+	margin-right:16px
 }
-
-.Video .NextVideoPreview .closeButton {
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 6px;
-	cursor: pointer
+.Video .NextVideoPreview .PreviewImageOverlay {
+	position:absolute;
+	left:0;
+	top:0;
+	width:240px;
+	height:135px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
+}
+.Video .NextVideoPreview .NextMsg {
+	color:#4a90e2;
+	font-weight:500;
+	font-size:20px;
+	margin-bottom:24px
+}
+.Video .NextVideoPreview .EpisodeNum {
+	font-size:18px;
+	font-weight:400
+}
+.Video .NextVideoPreview .EpisodeName {
+	width:183px;
+	font-size:18px;
+	overflow:hidden;
+	font-weight:700;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	line-height:27px;
+	max-height:54px;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical
 }
 
 .Video .fullscreen .bm-menu-wrap {
@@ -12595,8 +13814,7 @@ a.VideoItem:hover {
 .VideoItem .Bottom {
 	height: 42px
 }
-
-@media(max-width:500px) {
+@media(max-width:569px) {
 	.VideoItem .episodeNum {
 		font-size: 12px
 	}
@@ -13438,8 +14656,7 @@ a.VideoItem:hover {
 		font-size: 24px
 	}
 }
-
-@media (max-width:500px) {
+}@media (max-width:569px) {
 	.Profile .heading {
 		font-size: 18px
 	}
@@ -13583,13 +14800,12 @@ a.VideoItem:hover {
 }
 
 .Session-Modal .modal-content {
-	min-height: 560px;
-	max-height: 660px;
-	overflow-y: auto;
-	border-radius: 10px;
-	border: 0;
-	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.15);
-	box-shadow: 0 3px 5px rgba(0,0,0,.15)
+	min-height:630px;
+	overflow-y:auto;
+	border-radius:10px;
+	border:0;
+	-webkit-box-shadow:0 3px 5px rgba(0,0,0,.15);
+	box-shadow:0 3px 5px rgba(0,0,0,.15)
 }
 
 .Session-Modal .modal-content .modal-body {
@@ -13597,19 +14813,19 @@ a.VideoItem:hover {
 }
 
 .Register {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 560px;
-	height: auto
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px;
+	height:602px;
+	height:auto
 }
 
 .Register .btn-submit {
@@ -13620,17 +14836,15 @@ a.VideoItem:hover {
 	padding: 12px 16px;
 	font-size: 14px
 }
-
-.Register .terms {
-	margin-top: 6px;
-	color: #4a4a4a;
-	width: 300px
+.RootSignin .terms {
+	margin-top:6px;
+	color:#4a4a4a;
+	width:300px
 }
-
-.Register .terms a {
-	color: #1d1d1d;
-	text-decoration: underline;
-	font-weight: 700
+.RootSignin .terms a {
+	color:#1d1d1d;
+	text-decoration:underline;
+	font-weight:700
 }
 
 .Siginin {
@@ -13658,19 +14872,19 @@ a.VideoItem:hover {
 }
 
 .RootSignin {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 560px;
-	width: 100%
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px;
+	height:602px;
+	width:100%
 }
 
 .RootSignin .title {
@@ -13777,18 +14991,18 @@ a.VideoItem:hover {
 }
 
 .EmailSigin {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 560px
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px;
+	height:602px
 }
 
 .EmailSigin .signinIcon {
@@ -13812,18 +15026,18 @@ a.VideoItem:hover {
 }
 
 .ForgotPassword {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 560px
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px;
+	height:602px
 }
 
 .ForgotPassword .btn-submit {
@@ -13836,22 +15050,22 @@ a.VideoItem:hover {
 }
 
 .ResetPassword {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 10px;
-	height: 560px;
-	font-size: 12px;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px;
+	height:602px;
+	font-size:12px;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center
 }
 
 .ResetPassword .btn-submit {
@@ -14153,31 +15367,31 @@ a.VideoItem:hover {
 }
 
 .MessageItem .MessageHeader .name {
-	font-size: 12px;
-	font-weight: 700;
-	color: #1d1d1d
+	font-size:12px;
+	font-weight:700;
+	color:#fff
 }
 
 .MessageItem .MessageHeader .date {
-	font-size: 12px;
-	color: #9b9b9b;
-	padding-left: 8px
+	font-size:12px;
+	color:hsla(0,0%,100%,.5);
+	padding-left:8px
 }
 
 .MessageItem .MessageContent {
-	margin-top: 9px;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	background-color: #f6f6f6;
-	border-radius: 3px;
-	padding: 8px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center
+	margin-top:9px;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	background-color:#3b3b3b;
+	border-radius:6px;
+	padding:8px;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center
 }
 
 .MessageItem.me .MessageContent {
@@ -14189,10 +15403,10 @@ a.VideoItem:hover {
 }
 
 .MessageItem .MessageContent .message {
-	font-size: 14px;
-	color: #000;
-	max-width: 220px;
-	word-wrap: break-word
+	font-size:14px;
+	color:#fff;
+	max-width:220px;
+	word-wrap:break-word
 }
 
 .MessageItem.me .MessageContent .message {
@@ -14202,15 +15416,18 @@ a.VideoItem:hover {
 .MessageItem .MessageContent .message.image {
 	height: 100px
 }
-
+.LiveRightView {
+	background-color:#1e1e1e
+}
 .ChatPage {
-	border-left: 2px solid #ececec;
-	width: 320px;
-	height: 100%;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column
+	width:320px;
+	height:100%;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	background-color:#1e1e1e;
+	border-left:2px solid #292929
 }
 
 .ChatPage,.ChatPage .TopBar {
@@ -14220,29 +15437,35 @@ a.VideoItem:hover {
 }
 
 .ChatPage .TopBar {
-	border-bottom: 2px solid #ececec;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding-left: 6px;
-	height: 46px
+	border-bottom:2px solid #3a3a3a;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding-left:24px;
+	height:50px;
+	background-color:#2c2c2c;
+	color:#fff
 }
-
+.ChatPage .TopBar .title {
+	color:#fff;
+	font-size:16px
+}
 .ChatPage .TopBar .imgCollapse {
 	cursor: pointer
 }
 
 .ChatPage .TopBar .roomName {
-	font-size: 14px;
-	display: block;
-	display: -webkit-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical
+	font-size:16px;
+	font-weight:600;
+	display:block;
+	display:-webkit-box;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
 }
 
 .ChatPage .TopBar .dropdown .btn {
@@ -14296,17 +15519,17 @@ a.VideoItem:hover {
 }
 
 .ChatPage .Main .Messages {
-	margin-bottom: 50px
+	margin-bottom:54px
 }
 
 .ChatPage .Main .ErrorView {
-	width: 100%;
-	height: 40px;
-	background: #fff;
-	position: absolute;
-	top: -36px;
-	left: 0;
-	right: 0
+	width:100%;
+	height:40px;
+	background:#3b3b3b;
+	position:absolute;
+	top:-36px;
+	left:0;
+	right:0
 }
 
 .ChatPage .Main .ErrorView .errorMessage {
@@ -14340,38 +15563,39 @@ a.VideoItem:hover {
 }
 
 .ChatPage .Main .TextInput {
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-	background-color: #fff;
-	padding-left: 16px
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.15);
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.15);
+	background-color:#3b3b3b;
+	border-radius:6px;
+	padding-left:16px
 }
 
 .ChatPage .Main .TextInput,.ChatPage .Main .TextInput .SendButton {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	color:#fff
 }
 
 .ChatPage .Main .TextInput .SendButton {
-	background-color: #0a7deb;
-	color: #fff;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 68px;
-	height: 38px;
-	font-size: 14px;
-	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px
+	background-color:#0a7deb;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	width:68px;
+	height:38px;
+	font-size:14px;
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px
 }
 
 .ChatPage .Main .TextInput img {
@@ -14380,54 +15604,61 @@ a.VideoItem:hover {
 }
 
 .ChatPage .Main .TextInput input {
-	border: 0;
-	outline-width: 0;
-	font-size: 14px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1
+	color:#fff;
+	background-color:#3b3b3b;
+	padding-top:10px;
+	padding-bottom:10px;
+	border:0;
+	outline-width:0;
+	font-size:14px;
+	-webkit-box-flex:1;
+	-ms-flex:1;
+	flex:1
 }
 
 .ChatPage .Main .TextInput input::-webkit-input-placeholder {
-	color: #c6c6c6;
-	font-size: 14px
+	color:#fff;
+	font-size:14px
 }
 
 .ChatPage .Main .TextInput input::placeholder {
-	color: #c6c6c6;
-	font-size: 14px
+	color:#fff;
+	font-size:14px
 }
 
 .ChatPage .Main .TextInput input:-ms-input-placeholder,.ChatPage .Main .TextInput input::-ms-input-placeholder {
-	color: #c6c6c6;
-	font-size: 14px
+	color:#fff;
+	font-size:14px
 }
 
 .ChatPage .Main .StickerKeyboard {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	padding-bottom: 60px;
-	width: 100%;
-	background-color: #f6f6f6;
-	z-index: 1
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding-bottom:60px;
+	width:100%;
+	background-color:#141414;
+	z-index:1
 }
 
 .ChatPage .Main .StickerKeyboard .CatList {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	overflow-x: auto;
-	padding: 8px 14px;
-	border-bottom: 1px solid #ececec
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+	overflow-x:auto;
+	padding:8px 14px;
+	border-bottom:1px solid #292929
 }
-
+.StickerKeyboard>div:first-child>button div {
+	color:#3b97ef!important
+}
+.ChatPage .Main .StickerKeyboard>div:nth-child(2)>div {
+	background-color:#3b97ef!important
+}
 .ChatPage .Main .StickerKeyboard .CatList .CatItem {
 	width: 30px;
 	height: 30px;
@@ -15072,8 +16303,8 @@ a.VideoItem:hover {
 }
 
 .emoji-mart {
-	background-color: #f6f6f6;
-	background: transparent
+	background:transparent!important;
+	border:none!important
 }
 
 .emoji-mart .emoji-mart-scroll {
@@ -15089,9 +16320,62 @@ a.VideoItem:hover {
 }
 
 .emoji-mart .emoji-mart-category-label {
-	border-bottom: 1px solid #ececec
+	border-bottom:1px solid #292929
 }
-
+.ChannelNotSelectView {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	min-width:320px;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	width:100%;
+	height:100%;
+	position:relative
+}
+.ChannelNotSelectView .Image {
+	width:150px;
+	margin-bottom:4px
+}
+.ChannelNotSelectView .Title p {
+	font-size:20px;
+	color:#fff
+}
+.ChannelNotSelectView .Description p {
+	font-size:16px;
+	color:#fff
+}
+.ChannelNotSelectView .TopBar {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	border-bottom:1px solid #434343;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding-left:16px;
+	height:46px;
+	background-color:#2c2c2c
+}
+.ChannelNotSelectView .TopBar .title {
+	color:#fff;
+	font-size:16px
+}
 .bookmark-button {
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
