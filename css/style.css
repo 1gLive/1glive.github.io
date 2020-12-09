@@ -1,17 +1,13 @@
 @media (min-width:769px) {
 	:root {
-		--header-height: 72px
-	}
+	--header-height:72px
 }
-
-@media (max-width:768px) {
+}@media (max-width:768px) {
 	:root {
-		--header-height: 66px
-	}
+	--header-height:66px
 }
-
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
-	display: block
+}/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
+	display:block
 }
 
 audio,canvas,progress,video {
@@ -19,10 +15,11 @@ audio,canvas,progress,video {
 }
 
 audio:not([controls]) {
-	display: none;
-	height: 0
-}[hidden],template {
-	display: none
+	display:none;
+	height:0
+}
+[hidden],template {
+	display:none
 }
 
 a:active,a:hover {
@@ -64,9 +61,10 @@ button,input,select,textarea {
 }
 
 optgroup {
-	font-weight: 700
-}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring {
-	outline: 1px dotted ButtonText
+	font-weight:700
+}
+[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring {
+	outline:1px dotted ButtonText
 }
 
 fieldset {
@@ -82,13 +80,15 @@ legend {
 }
 
 textarea {
-	resize: none
-}[type=checkbox],[type=radio] {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0
-}[type=search] {
-	-webkit-appearance: textfield
+	resize:none
+}
+[type=checkbox],[type=radio] {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:0
+}
+[type=search] {
+	-webkit-appearance:textfield
 }
 
 ::-webkit-input-placeholder {
@@ -119,22 +119,20 @@ html {
 
 @media (min-width:1025px) {
 	html {
-		font-size: 12px
-	}
+	font-size:12px
 }
-
-@media (min-width:1800px) {
+}@media (min-width:1800px) {
 	html {
-		font-size: 14px
-	}
+	font-size:14px
 }
-
-body {
-	color: #1d1d1d
+}body {
+	color:#1d1d1d;
+	height:100vh;
+	overflow-x:visible!important
 }
 
 html body {
-	font-family: Open sans,Microsoft JhengHei,Tahoma,Helvetica,Microsoft Yahei,\\5FAE\8EDF\96C5\9ED1\9AD4,Arial,sans-serif
+	font-family:Inter,Open sans,Microsoft JhengHei,Tahoma,Helvetica,Microsoft Yahei,\\5FAE\8EDF\96C5\9ED1\9AD4,Arial,sans-serif
 }
 
 .App {
@@ -186,38 +184,30 @@ button:disabled {
 .dropdown-toggle {
 	cursor: pointer
 }
-
-@media (max-width:500px) {
-	.Page[style*="transform: translate3d(240px, 0px, 0px)"] {
-		width: 100%!important
-	}
+@media (max-width:569px) {
+	.Page[style*="transform:translate3d(240px,0px,0px)"] {
+	width:100%!important
 }
-
-@media (min-width:769px) {
-	.Page[style*="transform: translate3d(240px, 0px, 0px)"] {
-		width: 100%!important
-	}
+}@media (min-width:769px) {
+	.Page[style*="transform:translate3d(240px,0px,0px)"] {
+	width:100%!important
 }
-
-@media (min-width:1025px) {
-	.Page[style*="transform: translate3d(240px, 0px, 0px)"] {
-		width: calc(100% - 240px)!important;
-		margin-left: 240px
-	}
-
-	.Page {
-		-webkit-transform: none!important;
-		transform: none!important;
-		-webkit-transition: unset!important;
-		transition: unset!important
-	}
+}@media (min-width:1025px) {
+	.Page[style*="transform:translate3d(240px,0px,0px)"] {
+	width:calc(100% - 240px)!important;
+	margin-left:240px
 }
-
-.Page>.Content {
-	margin-top: var(--header-height);
-	width: 100%;
-	overflow-x: hidden;
-	padding: 10px
+.Page {
+	-webkit-transform:none!important;
+	transform:none!important;
+	-webkit-transition:unset!important;
+	transition:unset!important
+}
+}.Page>.Content {
+	margin-top:var(--header-height);
+	width:100%;
+	overflow-x:hidden;
+	padding:10px
 }
 
 .Page.Page-Live>.Content {
@@ -246,7 +236,7 @@ button:disabled {
 	left: 5px;
 	top: 5px;
 	color: #fff;
-	background-image: url("https://viu.tv/assets/img/icon_members@1x.png");
+	background-image: url("https://viu.tv/assets/img/icon_members@2x.png");
 	background-size: 36px;
 	background-position: 50%;
 	width: 36px;
@@ -566,7 +556,21 @@ body a {
 .bm-menu .Menu-link.Menu-Event.Menu-link--active:before {
 	background-image: url("https://viu.tv/assets/img/kingMaker/3x/Star Active@3x.png")
 }
-
+.bm-menu .Menu-link.Menu-Summer {
+	display:-webkit-box!important;
+	display:-ms-flexbox!important;
+	display:flex!important;
+	color:#2d81c4
+}
+.bm-menu .Menu-link.Menu-Summer.Menu-link--active {
+	color:#2d81c4!important
+}
+.bm-menu .Menu-link.Menu-Summer:before {
+	background-image:url("https://viu.tv/assets/img/summerCampaign/3x/Summer Campaign icon@3x.png")
+}
+.bm-menu .Menu-link.Menu-Summer.Menu-link--active:before {
+	background-image:url("https://viu.tv/assets/img/summerCampaign/3x/Summer Campaign icon active@3x.png")
+}
 .bm-menu .Menu-link.Menu-Programme {
 	display: -webkit-box!important;
 	display: -ms-flexbox!important;
@@ -768,15 +772,21 @@ body a {
 	box-shadow: 0 3px 5px rgba(0,0,0,.15);
 	border-radius: 10px
 }
-
-.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
-	font-size: 160%!important
-}
-
-@media (max-width:480px) {
+@media (max-width:426px) {
 	.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
-		font-size: 170%!important
-	}
+	font-size:5vw!important
+}
+}@media (min-width:427px) {
+	.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
+	font-size:3.6vw!important
+}
+}@media (min-width:768px) {
+	.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
+	font-size:3vw!important
+}
+}@media (min-width:1024px) {
+	.jw-captions,.jw-text-track-cue,.jw-video::-webkit-media-text-track-display,.jw-video::cue {
+	font-size:3vw!important
 }
 
 .jwplayer:not(.jw-flag-audio-player):not(.jw-flag-casting):not(.jw-flag-media-audio) .jw-controls-backdrop {
