@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>無綫新聞台</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function getPlayLink(){
+                $.ajax({
+                    url: "https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=C",
+                    type: "GET",
+                    dataType: "jsonp",
+                    success: function (e) {
+                        self.location='e.profiles.auto.replace("p=4092","p=3327")';
+                    },
+                });
+            }
+          getPlayLink();
+        </script>
+    </body>
+</html>
