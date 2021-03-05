@@ -7,21 +7,14 @@
     </head>
     <body>
         <script type="text/javascript">
-//            function getPlayLink(){
-//                $.ajax({
-//                    url: "https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=C",
-//                    type: "GET",
-//                    dataType: "jsonp",
-//                    success: function (e) {
-//                        self.location=e.profiles.auto.replace("p=4092","p=3327");
-//                    },
-//                });
-//            }
-//          getPlayLink();
-$.get("https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=C", function(data){
-	data=JSON.parse(data);
-	self.location=data['auto'];
-});
+	$.ajax({
+	    url: "https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=C",
+	    type: "GET",
+	    dataType: "jsonp",
+	    success: function (e) {
+		self.location=e.profiles.auto.replace("p=4092","p=3327");
+	    },
+	});
         </script>
     </body>
 </html>
