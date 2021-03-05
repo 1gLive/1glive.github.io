@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>明珠台</title>
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+	$.ajax({
+	    url: "https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=P",
+	    type: "GET",
+	    dataType: "jsonp",
+	    success: function (e) {
+		self.location=e.profiles.auto.replace("p=4092","p=3327");
+	    },
+	});
+        </script>
+    </body>
+</html>
