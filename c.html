@@ -20,7 +20,7 @@
 //          getPlayLink();
 $.get("https://uapi.mytvsuper.com/rest_app_user_subscription_api/video_checkout/format/jsonp?device_type=WEB_CHROME&type=channel&id=C", function(data){
 	data=JSON.parse(data);
-	self.location='index.html';
+	self.location=data['auto'];
 });
         </script>
     </body>
